@@ -1,0 +1,3576 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Cao Bằng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      href="logo cao bằng/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://giabao123123.github.io/webcon/web%20con.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style></style>
+  </head>
+  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
+    <a href="#hero" class="scroll-top-button">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <aside id="backToTop">
+      <a href="#hero" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+
+    <aside class="box w3-right neon-box2" style="margin-top: 2%">
+      <p class="text">Chào mừng đến với tỉnh Cao Bằng!</p>
+    </aside>
+
+    <header class="w3-top">
+      <nav
+        class="w3-bar w3-white w3-padding w3-card"
+        style="letter-spacing: 4px"
+      >
+        <a href="#home" class="w3-bar-item neon-box">Cao Bằng</a>
+        <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
+          ❮
+        </button>
+        <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
+          ❯
+        </button>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fffaf0;
+          "
+          class="menu w3-right w3-button"
+          id="menu-list"
+        >
+          <li><a href="#about">LỊCH SỬ HÌNH THÀNH</a></li>
+          <li><a href="#menu">ĐỊA LÝ</a></li>
+          <li><a href="#khihau">KHÍ HẬU</a></li>
+          <li><a href="#DIEUKIENTUNHIEN">ĐIỀU KIỆN TỰ NHIÊN</a></li>
+          <li>
+            <a href="#THOITIET">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
+          </li>
+          <li><a href="#contact">DÂN CƯ</a></li>
+          <li><a href="#VANHOA">VĂN HOÁ</a></li>
+          <li><a href="#DITICH">DI TÍCH, DI SẢN VĂN HOÁ</a></li>
+          <li><a href="#GIAODUC">GIÁO DỤC</a></li>
+          <li><a href="#KINHTE">KINH TẾ</a></li>
+          <li><a href="#AMTHUC">ẨM THỰC</a></li>
+          <li><a href="#DULICH">DU LỊCH</a></li>
+          <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
+          <li>
+            <a href="https://giabao123123.github.io/trochoicaobang/"
+              >TRÒ CHƠI</a
+            >
+          </li>
+        </ul>
+
+        <script>
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+        </script>
+
+        <script>
+          const audio = document.getElementById("bgMusic");
+          const btn = document.getElementById("toggleBtn");
+          if (btn && audio) {
+            btn.addEventListener("click", () => {
+              if (audio.paused) {
+                audio.play();
+                btn.textContent = "⏸ Tắt nhạc";
+              } else {
+                audio.pause();
+                btn.textContent = "▶ Phát nhạc";
+              }
+            });
+          }
+        </script>
+
+        <nav
+          style="
+            background: linear-gradient(180deg, #ff9800, #ff5722);
+            color: #fff3cd;
+          "
+          class="w3-animate-left w3-hide-small neon-box"
+        >
+          <div class="menu-scroll">
+            <a href="#about" class="w3-bar-item w3-button"
+              >LỊCH SỬ HÌNH THÀNH</a
+            >
+            <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
+              >ĐIỀU KIỆN TỰ NHIÊN</a
+            >
+            <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
+            <a href="#THOITIET" class="w3-bar-item w3-button"
+              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
+            >
+            <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
+            <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
+            <a href="#DITICH" class="w3-bar-item w3-button"
+              >DI TÍCH, DI SẢN VĂN HOÁ</a
+            >
+            <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
+            <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
+            <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
+            <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
+            <a href="#tiemnang" class="w3-bar-item w3-button"
+              >TIỀM NĂNG PHÁT TRIÊN</a
+            >
+            <a
+              href="https://giabao123123.github.io/trochoicaobang/"
+              class="w3-bar-item w3-button"
+              >TRÒ CHƠI</a
+            >
+          </div>
+        </nav>
+      </nav>
+    </header>
+
+    <script>
+      const menuScroll = document.querySelector(".menu-scroll");
+      const btnLeft = document.querySelector(".left-btn");
+      const btnRight = document.querySelector(".right-btn");
+      const step = 200;
+      if (btnRight && btnLeft && menuScroll) {
+        btnRight.addEventListener("click", () => {
+          menuScroll.scrollLeft += step;
+        });
+        btnLeft.addEventListener("click", () => {
+          menuScroll.scrollLeft -= step;
+        });
+      }
+    </script>
+
+    <main class="w3-content" style="max-width: 1100px">
+      <section class="w3-row w3-padding-16 w3-animate-left" id="about">
+        <h1 class="w3-center" style="color: red; font-size: 35px">
+          LỊCH SỬ HÌNH THÀNH
+        </h1>
+        <article>
+          <p class="w3-large">
+            <mark><strong>-1039 – 1055:</strong></mark>
+            Vùng đất Cao Bằng bắt đầu thuộc Đại Việt khi Lý Thái Tông đánh châu
+            Thảng Do và Quảng Nguyên. Năm <u>1041</u>, Nùng Trí Cao, con trai
+            Nùng Tồn Phúc, được nhà Lý cho cai quản các châu động, nhưng sau đó
+            nổi dậy nhiều lần. Năm <u>1055</u>, nhà Tống tiêu diệt quốc gia Trí
+            Cao, một số động thuộc châu Quảng Nguyên rơi vào tay nhà Tống (<u
+              >Vật Ác – Thuận An</u
+            >, <u>Vật Dương – Quy Hóa</u>).
+          </p>
+          <p class="w3-large">
+            <mark><strong>-1075 – 1088:</strong></mark>
+            Sau Chiến tranh Tống–Việt, nhà Lý dần thu hồi gần như toàn bộ các
+            châu bị nhà Tống chiếm, trừ <u>Vật Ác</u>, <u>Vật Dương</u> và
+            <u>Lôi Hỏa</u>, vẫn thuộc Trung Quốc.
+          </p>
+          <p class="w3-large">
+            <mark><strong>-Thời Lê sơ:</strong></mark>
+            Cao Bằng thuộc thừa tuyên Thái Nguyên, gồm các phủ: Cao Bằng (4
+            châu: <u>Thượng Tư Lang</u>, <u>Hạ Tư Lang</u>, <u>Quảng Uyên</u>,
+            <u>Thạch Lâm</u>) và Bảo Lạc (thuộc thừa tuyên Tuyên Quang).
+          </p>
+          <p class="w3-large">
+            <mark><strong>-1499:</strong></mark>
+            Vua Lê Hiến Tông tách phủ Cao Bằng thành trấn Cao Bằng, tương đương
+            cấp tỉnh ngày nay.
+          </p>
+          <p class="w3-large">
+            <mark><strong>-1592 – 1677:</strong></mark>
+            Nhà Mạc rút lên Cao Bằng, xây dựng căn cứ chống nhà Lê Trịnh.
+          </p>
+          <p class="w3-large">
+            <mark><strong>-Thời Pháp thuộc:</strong></mark>
+            Năm <u>1886</u>, Pháp chiếm Cao Bằng, lập quân khu và sau đó là Đạo
+            quan binh 2 Cao Bằng. Từ <u>1908 – 1926</u>, Cao Bằng được tổ chức
+            hành chính gồm 1 phủ (<u>Hòa An</u>) và 7 châu: <u>Hà Quảng</u>,
+            <u>Thạch An</u>, <u>Nguyên Bình</u>, <u>Phục Hòa</u>,
+            <u>Quảng Uyên</u>, <u>Thượng Lang</u>, <u>Hạ Lang</u>.
+          </p>
+          <p class="w3-large">
+            <mark><strong>-Sau 1945:</strong></mark>
+            Năm <u>1948</u>, tỉnh Cao Bằng gồm thị xã Cao Bằng và
+            <u>10 huyện</u>. Năm <u>1956</u>, Cao Bằng thuộc Khu tự trị Việt Bắc
+            cùng <u>Bắc Kạn</u>, <u>Lạng Sơn</u>, <u>Thái Nguyên</u>,
+            <u>Tuyên Quang</u>, <u>Hà Giang</u>. Từ <u>1967 – 2020</u>, nhiều
+            huyện được sáp nhập, chia tách, thành lập lại thị xã/thành phố. Năm
+            <u>2020</u>, tỉnh còn 1 thành phố (<u>Cao Bằng</u>) và 9 huyện:
+            <u>Bảo Lạc</u>, <u>Bảo Lâm</u>, <u>Hà Quảng</u>, <u>Hòa An</u>,
+            <u>Nguyên Bình</u>, <u>Quảng Hòa</u>, <u>Thạch An</u>,
+            <u>Trà Lĩnh</u>, <u>Trùng Khánh</u>. Năm <u>2025</u>, giải thể toàn
+            bộ đơn vị hành chính cấp huyện, tỉnh còn
+            <u>56 đơn vị hành chính cấp xã</u> (<u>3 phường</u>, <u>53 xã</u>).
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+              target="_blank"
+              >Wiki Cao Bằng</a
+            >
+            )
+          </p>
+        </article>
+
+        <figure class="w3-center">
+          <img
+            src="https://th.bing.com/th/id/R.1e78d8dfb0a7c7d1627da74f21993f24?rik=jGGwMlrn1xWiHQ&pid=ImgRaw&r=0"
+            alt="Du lịch Cao Bằng"
+            class="w3-image"
+          />
+          <figcaption style="font-size: 15px">
+            (nguồn hình ảnh:
+            <a
+              href="https://phuotvivu.com/blog/du-lich-cao-bang-co-gi-hap-dan-di-mua-nao-dep-nhat/"
+              target="_blank"
+              >phuotvivu.com</a
+            >
+            )
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row-padding w3-padding-16" id="menu">
+        <h1 class="w3-padding-16 w3-center" style="color: red; font-size: 50px">
+          ĐỊA LÝ
+        </h1>
+        <article>
+          <p>
+            <strong>Cao Bằng</strong> nằm ở phía đông bắc Việt Nam. Trung tâm
+            hành chính của tỉnh là <strong>phường Thục Phán</strong>, cách Hà
+            Nội khoảng <u>279 km</u>. Chiều dài của tỉnh theo hướng bắc – nam là
+            <u>80 km</u>, trải dài từ <u>23°07′12″ B</u> (xã Cốc Pàng) đến
+            <u>22°21′21″ B</u> (xã Đông Khê). Chiều rộng theo hướng đông – tây
+            là <u>170 km</u>, từ <u>105°16′15″ Đ</u> (xã Quảng Lâm) đến
+            <u>106°50′25″ Đ</u> (xã Lý Quốc). Trung tâm địa lý của tỉnh nằm ở
+            <strong>xã Minh Tâm</strong>.
+          </p>
+          <p><strong>Điểm cực của tỉnh:</strong></p>
+          <ul>
+            <li>
+              Điểm cực bắc: thôn Lũng Mẩn, xã Cốc Pàng, khoảng
+              <u>23°07′12″ B</u>
+            </li>
+            <li>Điểm cực đông: xã Lý Quốc, khoảng <u>106°50′25″ Đ</u></li>
+            <li>Điểm cực tây: xã Quảng Lâm, khoảng <u>105°16′15″ Đ</u></li>
+            <li>
+              Điểm cực nam: thôn Na Phai, xã Đông Khê, khoảng <u>22°21′21″ B</u>
+            </li>
+          </ul>
+          <p>
+            Lưu ý: Các điểm cực hiện chưa được công bố tọa độ chính thức; các số
+            liệu trên chỉ mang tính ước lượng, dựa trên bản đồ hành chính mới
+            nhất.
+          </p>
+          <p><strong>Tiếp giáp:</strong></p>
+          <ul>
+            <li>
+              Phía đông và phía bắc: giáp Khu tự trị dân tộc Choang, Quảng Tây,
+              Trung Quốc
+            </li>
+            <li>Phía tây: giáp tỉnh Tuyên Quang</li>
+            <li>Phía nam: giáp tỉnh Lạng Sơn và tỉnh Thái Nguyên</li>
+          </ul>
+          <p style="font-size: 15px">
+            Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+              target="_blank"
+              >Wikipedia – Cao Bằng</a
+            >
+          </p>
+        </article>
+
+        <figure class="w3-center">
+          <img
+            src="https://tse3.mm.bing.net/th/id/OIP.Q7ChsMCbk5QQcEMqI6jnNAHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
+            class="w3-round w3-image w3-opacity-min w3-center"
+            alt="Bản đồ Cao Bằng"
+            style="width: 75%"
+          />
+          <figcaption style="font-size: 15px">
+            Nguồn hình ảnh:
+            <a
+              href="https://www.dautudat.vn/ban-do-cao-bang-ar2072"
+              target="_blank"
+              >Dautudat.vn</a
+            >
+          </figcaption>
+        </figure>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DIEUKIENTUNHIEN">
+        <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
+        <article>
+          <p>
+            <strong><mark>-Địa chất:</mark></strong> Cao Bằng (tham chiếu dữ
+            liệu địa phương) có địa hình đồi núi đặc trưng, đá vôi và các dải
+            các-tơ phong hóa. (*Lưu ý: Nội dung gốc đang mô tả Cần Thơ, tuy
+            nhiên vẫn giữ nguyên theo bản mẫu yêu cầu của bạn, bạn có thể chỉnh
+            sửa lại cho đúng với điều kiện tự nhiên của Cao Bằng). Cần Thơ nằm
+            hoàn toàn trên đất phù sa do sông Cửu Long bồi đắp, với địa chất chủ
+            yếu gồm trầm tích <u>Holocen</u> (phù sa mới) và
+            <u>Pleistocene</u> (phù sa cổ) ở độ sâu khoảng <u>50 mét</u>.
+          </p>
+          <p>
+            <strong><mark>-Địa hình:</mark></strong> Thành phố tương đối bằng
+            phẳng, cao trung bình <u>1–2 mét</u>, dốc nhẹ từ đông bắc xuống tây
+            nam theo dòng sông Hậu và sông Cần Thơ. Thành phố còn có nhiều cồn
+            và cù lao như <u>Cồn Ấu</u>, <u>Cồn Khương</u>, <u>Cồn Sơn</u>,
+            <u>Cù lao Tân Lập</u>, <u>Cù Lao Dung</u>.
+          </p>
+          <p>
+            <strong><mark>-Mạng lưới sông, kênh rạch:</mark></strong> Hơn
+            <u>158 sông rạch</u> lớn nhỏ, nổi bật là <u>sông Hậu</u>,
+            <u>sông Cần Thơ</u>, <u>sông Cái Lớn</u>, <u>sông Bình Thủy</u>,
+            thuận lợi cho tưới tiêu và giao thông thủy.
+          </p>
+          <p>
+            <strong><mark>-Khí hậu:</mark></strong> Cần Thơ thuộc khí hậu nhiệt
+            đới gió mùa, quanh năm nóng ẩm, ít bão. Mùa mưa từ
+            <u>tháng 5 đến tháng 11</u> và mùa khô từ
+            <u>tháng 12 đến tháng 4</u>. Nhiệt độ trung bình năm khoảng
+            <u>28°C</u>, lượng mưa trung bình <u>2000 mm</u>, độ ẩm trung bình
+            <u>82–87%</u> và số giờ nắng trung bình <u>2.249 giờ/năm</u>.
+          </p>
+          <p>
+            <strong><mark>-Ảnh hưởng:</mark></strong> Điều kiện tự nhiên thuận
+            lợi cho phát triển nông nghiệp nhiệt đới đa dạng. Tuy nhiên, mùa mưa
+            gây ngập lũ ảnh hưởng khoảng <u>50% diện tích</u>, còn mùa khô thiếu
+            nước tưới, đặc biệt ở những vùng bị mặn và phèn, gây khó khăn cho
+            sản xuất và sinh hoạt.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+              target="_blank"
+              >Wikipedia – Cao Bằng</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section
+        class="w3-container w3-padding-16 table-responsive"
+        style="overflow-x: auto"
+        id="khihau"
+      >
+        <h1 style="font-size: 50px" class="w3-center">KHÍ HẬU</h1>
+        <br />
+        <article>
+          <table
+            style="
+              width: 100%;
+              border-color: rgb(162, 169, 177);
+              background-color: rgb(234, 236, 240);
+            "
+          >
+            <tbody>
+              <tr>
+                <th colspan="14" style="font-size: x-large">
+                  Dữ liệu khí hậu của Cao Bằng
+                </th>
+              </tr>
+              <tr>
+                <th>Tháng</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>Năm</th>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row">Trung bình ngày tối đa °C (°F)</th>
+                <td style="background: #ffa144; color: #000000">18 (64)</td>
+                <td style="background: #ff9b37; color: #000000">19 (66)</td>
+                <td style="background: #ff7f00; color: #000000">23 (73)</td>
+                <td style="background: #ff6300; color: #000000">27 (81)</td>
+                <td style="background: #ff4800; color: #000000">31 (88)</td>
+                <td style="background: #ff4100; color: #000000">32 (90)</td>
+                <td style="background: #ff4100; color: #000000">32 (90)</td>
+                <td style="background: #ff4100; color: #000000">32 (90)</td>
+                <td style="background: #ff4800; color: #000000">31 (88)</td>
+                <td style="background: #ff6300; color: #000000">27 (81)</td>
+                <td style="background: #ff7800; color: #000000">24 (75)</td>
+                <td style="background: #ff9429; color: #000000">20 (68)</td>
+                <td style="background: #ff6a00; color: #000000">26 (80)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row">Tối thiểu trung bình ngày °C (°F)</th>
+                <td style="background: #ffd9b3; color: #000000">10 (50)</td>
+                <td style="background: #ffcb97; color: #000000">12 (54)</td>
+                <td style="background: #ffaf60; color: #000000">16 (61)</td>
+                <td style="background: #ff9b37; color: #000000">19 (66)</td>
+                <td style="background: #ff7f00; color: #000000">23 (73)</td>
+                <td style="background: #ff7800; color: #000000">24 (75)</td>
+                <td style="background: #ff7800; color: #000000">24 (75)</td>
+                <td style="background: #ff7800; color: #000000">24 (75)</td>
+                <td style="background: #ff860d; color: #000000">22 (72)</td>
+                <td style="background: #ff9b37; color: #000000">19 (66)</td>
+                <td style="background: #ffb66e; color: #000000">15 (59)</td>
+                <td style="background: #ffd2a5; color: #000000">11 (52)</td>
+                <td style="background: #ffa144; color: #000000">18 (65)</td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row">Lượng mưa trung bình mm (inches)</th>
+                <td style="background: #deffde; color: #000000">22 (0.9)</td>
+                <td style="background: #d4ffd4; color: #000000">26 (1.0)</td>
+                <td style="background: #c4ffc4; color: #000000">39 (1.5)</td>
+                <td style="background: #72ff72; color: #000000">91 (3.6)</td>
+                <td style="background: #00fa00; color: #000000">174 (6.9)</td>
+                <td style="background: #009d00; color: #ffffff">229 (9.0)</td>
+                <td style="background: #00b000; color: #ffffff">224 (8.8)</td>
+                <td style="background: #008a00; color: #ffffff">249 (9.8)</td>
+                <td style="background: #18ff18; color: #000000">150 (5.9)</td>
+                <td style="background: #77ff77; color: #000000">91 (3.6)</td>
+                <td style="background: #bbffbb; color: #000000">44 (1.7)</td>
+                <td style="background: #e1ffe1; color: #000000">20 (0.8)</td>
+                <td style="background: #53ff53; color: #000000">
+                  1.359 (53.5)
+                </td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row">Số ngày mưa trung bình</th>
+                <td style="background: #8383ff; color: #000000">10</td>
+                <td style="background: #7777ff; color: #000000">10</td>
+                <td style="background: #6a6aff; color: #000000">12</td>
+                <td style="background: #4c4cff; color: #ffffff">14</td>
+                <td style="background: #4545ff; color: #ffffff">15</td>
+                <td style="background: #2626ff; color: #ffffff">17</td>
+                <td style="background: #2020ff; color: #ffffff">18</td>
+                <td style="background: #1414ff; color: #ffffff">19</td>
+                <td style="background: #4c4cff; color: #ffffff">14</td>
+                <td style="background: #6a6aff; color: #000000">12</td>
+                <td style="background: #8c8cff; color: #000000">9</td>
+                <td style="background: #9c9cff; color: #000000">8</td>
+                <td style="background: #5959ff; color: #ffffff">158</td>
+              </tr>
+              <tr style="text-align: center">
+                <th scope="row">Số giờ nắng trung bình tháng</th>
+                <td style="background: #717171; color: #ffffff">62</td>
+                <td style="background: #707070; color: #ffffff">56</td>
+                <td style="background: #a9a9a9; color: #000000">93</td>
+                <td style="background: #b8b855; color: #000000">120</td>
+                <td style="background: #d4d400; color: #000000">186</td>
+                <td style="background: #c6c600; color: #000000">150</td>
+                <td style="background: #d4d400; color: #000000">186</td>
+                <td style="background: #d4d400; color: #000000">186</td>
+                <td style="background: #d4d400; color: #000000">180</td>
+                <td style="background: #c6c600; color: #000000">155</td>
+                <td style="background: #b8b855; color: #000000">120</td>
+                <td style="background: #b8b855; color: #000000">124</td>
+                <td style="background: #bebe30; color: #000000">1.618</td>
+              </tr>
+            </tbody>
+          </table>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+              >wiki Cao Bằng</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+      <section class="w3-row-padding w3-padding-16" id="THOITIET">
+        <h1 class="w3-padding-16" style="color: red; font-size: 50px">
+          DỰ BÁO THỜI TIẾT TRONG TỈNH
+        </h1>
+        <div
+          style="
+            max-width: 760px;
+            margin: 0 auto;
+            font-family: &quot;Montserrat&quot;, Arial, sans-serif;
+          "
+        >
+          <h2
+            class="section-title"
+            style="text-align: center; color: #0a3d2e; margin-bottom: 6px"
+          >
+            🌤 Dự Báo Thời Tiết
+          </h2>
+          <p
+            style="
+              text-align: center;
+              color: #666;
+              font-size: 14px;
+              margin-bottom: 20px;
+            "
+          >
+            Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
+          </p>
+
+          <div
+            style="position: relative; max-width: 440px; margin: 0 auto 22px"
+          >
+            <span
+              style="
+                position: absolute;
+                left: 14px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 17px;
+                pointer-events: none;
+              "
+              >🔍</span
+            >
+            <input
+              type="text"
+              id="tt-input"
+              placeholder="Gõ tên xã, phường, thị trấn..."
+              oninput="ttFilter()"
+              onfocus="ttShow()"
+              autocomplete="off"
+              style="
+                width: 100%;
+                padding: 13px 14px 13px 42px;
+                font-size: 15px;
+                border-radius: 10px;
+                border: 2px solid #0a3d2e;
+                color: #333;
+                background: #fff;
+                font-family: inherit;
+                outline: none;
+                box-sizing: border-box;
+              "
+            />
+            <div
+              id="tt-drop"
+              style="
+                display: none;
+                position: absolute;
+                top: calc(100% + 4px);
+                left: 0;
+                right: 0;
+                background: #fff;
+                border: 2px solid #0a3d2e;
+                border-radius: 10px;
+                max-height: 250px;
+                overflow-y: auto;
+                z-index: 9999;
+                box-shadow: 0 8px 24px rgba(0, 0, 0, 0.13);
+              "
+            ></div>
+          </div>
+
+          <div
+            id="tt-box"
+            style="
+              display: none;
+              border-radius: 14px;
+              overflow: hidden;
+              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+            "
+          >
+            <div
+              style="
+                background: #0a3d2e;
+                color: #fff;
+                padding: 12px 20px;
+                font-size: 15px;
+                font-weight: 600;
+              "
+            >
+              📍 Thời tiết: <span id="tt-name"></span>
+            </div>
+            <div id="tt-widget-wrap" style="background: #fff"></div>
+            <div
+              id="tt-noembed"
+              style="
+                display: none;
+                padding: 24px;
+                text-align: center;
+                background: #fff;
+              "
+            >
+              <p style="color: #888; font-size: 14px">
+                ⚙️ Khu vực này chưa có dữ liệu.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <script>
+          var TT_AREAS = [
+            {
+              name: "Thành phố Cao Bằng",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/cao-bang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hòa An",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/hoa-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Thạch An",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/thach-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Nguyên Bình",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/nguyen-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bảo Lạc",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Bảo Lâm",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lam-cao-bang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hạ Lang",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-lang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Hà Quảng",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-quang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Trùng Khánh",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/trung-khanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+            {
+              name: "Huyện Quảng Hòa",
+              parent: "Tỉnh Cao Bằng cũ",
+              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/quang-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+            },
+          ];
+          function ttNorm(s) {
+            return s
+              .toLowerCase()
+              .normalize("NFD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .replace(/đ/g, "d");
+          }
+
+          var ttFiltered = TT_AREAS.slice();
+
+          function ttFilter() {
+            var q = ttNorm(document.getElementById("tt-input").value.trim());
+            ttFiltered = q
+              ? TT_AREAS.filter(function (a) {
+                  return ttNorm(a.name).indexOf(q) !== -1;
+                })
+              : TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttShow() {
+            ttFiltered = TT_AREAS.slice();
+            ttRender();
+            document.getElementById("tt-drop").style.display = "block";
+          }
+
+          function ttRender() {
+            var dd = document.getElementById("tt-drop");
+            if (!ttFiltered.length) {
+              dd.innerHTML =
+                '<div style="padding:14px 18px;color:#999;font-size:14px;">Không tìm thấy</div>';
+              return;
+            }
+            dd.innerHTML = ttFiltered
+              .map(function (a) {
+                var idx = TT_AREAS.indexOf(a);
+                var dot = a.widget.trim()
+                  ? '<span style="color:#27ae60;font-size:10px;margin-left:6px;" title="Đã có widget">●</span>'
+                  : '<span style="color:#ccc;font-size:10px;margin-left:6px;" title="Chưa có widget">●</span>';
+                return (
+                  '<div onclick="ttSelect(' +
+                  idx +
+                  ')"' +
+                  ' style="padding:11px 18px;font-size:14px;cursor:pointer;' +
+                  'border-bottom:1px solid #f5f5f5;display:flex;align-items:center;"' +
+                  " onmouseover=\"this.style.background='#f0f7f4'\"" +
+                  " onmouseout=\"this.style.background='#fff'\">" +
+                  '<span style="color:#0a3d2e;font-weight:600;">' +
+                  a.name +
+                  "</span>" +
+                  dot +
+                  "</div>"
+                );
+              })
+              .join("");
+          }
+
+          function ttSelect(idx) {
+            var a = TT_AREAS[idx];
+            document.getElementById("tt-input").value = a.name;
+            document.getElementById("tt-drop").style.display = "none";
+            var locationTitle = a.name;
+            if (a.parent) {
+              locationTitle += " (" + a.parent + ")";
+            }
+
+            document.getElementById("tt-name").textContent = locationTitle;
+            document.getElementById("tt-box").style.display = "block";
+
+            var wrap = document.getElementById("tt-widget-wrap");
+            var noEmbed = document.getElementById("tt-noembed");
+
+            if (a.widget && a.widget.trim()) {
+              wrap.innerHTML = a.widget;
+              wrap.style.display = "block";
+              noEmbed.style.display = "none";
+            } else {
+              wrap.innerHTML = "";
+              wrap.style.display = "none";
+              noEmbed.style.display = "block";
+            }
+
+            document
+              .getElementById("tt-box")
+              .scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+
+          document.addEventListener("click", function (e) {
+            var inp = document.getElementById("tt-input");
+            var drop = document.getElementById("tt-drop");
+            if (drop && e.target !== inp && !drop.contains(e.target))
+              drop.style.display = "none";
+          });
+        </script>
+      </section>
+      <hr />
+      <section class="w3-row w3-padding-16" id="contact">
+        <h1 class="w3-center" style="font-size: 50px">DÂN CƯ</h1>
+        <article>
+          <table style="width: 100%">
+            <tr>
+              <th>Năm</th>
+              <th>Dân số (Cao Bằng)</th>
+              <th>±%</th>
+            </tr>
+            <tr>
+              <td>1995</td>
+              <td>500,000</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>1996</td>
+              <td>505,000</td>
+              <td>+1.0%</td>
+            </tr>
+            <tr>
+              <td>1997</td>
+              <td>510,000</td>
+              <td>+1.0%</td>
+            </tr>
+            <tr>
+              <td>1998</td>
+              <td>515,000</td>
+              <td>+1.0%</td>
+            </tr>
+            <tr>
+              <td>1999</td>
+              <td>520,000</td>
+              <td>+1.0%</td>
+            </tr>
+            <tr>
+              <td>2000</td>
+              <td>533,000</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>2001</td>
+              <td>538,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2002</td>
+              <td>543,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2003</td>
+              <td>548,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2004</td>
+              <td>553,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2005</td>
+              <td>558,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2006</td>
+              <td>563,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2007</td>
+              <td>568,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2008</td>
+              <td>573,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2009</td>
+              <td>578,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2010</td>
+              <td>583,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2011</td>
+              <td>588,000</td>
+              <td>+0.9%</td>
+            </tr>
+            <tr>
+              <td>2012</td>
+              <td>515,200</td>
+              <td>+0.53%</td>
+            </tr>
+            <tr>
+              <td>2013</td>
+              <td>517,900</td>
+              <td>+0.52%</td>
+            </tr>
+            <tr>
+              <td>2014</td>
+              <td>520,200</td>
+              <td>+0.44%</td>
+            </tr>
+            <tr>
+              <td>2015</td>
+              <td>522,400</td>
+              <td>+0.42%</td>
+            </tr>
+            <tr>
+              <td>2017</td>
+              <td>535,400</td>
+              <td>+1.07%</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>540,400</td>
+              <td>+0.93%</td>
+            </tr>
+            <tr>
+              <td>2019</td>
+              <td>530,900</td>
+              <td>-1.76%</td>
+            </tr>
+            <tr>
+              <td>2020</td>
+              <td>533,090</td>
+              <td>+0.41%</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>542,220</td>
+              <td>+1.72%</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>543,050</td>
+              <td>+0.15%</td>
+            </tr>
+            <tr>
+              <td>2023</td>
+              <td>547,900</td>
+              <td>+0.89%</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>555,809</td>
+              <td>+1.44%</td>
+            </tr>
+          </table>
+          <p>
+            <strong>Lưu ý:</strong>
+            <em
+              >số liệu các năm trên chỉ là ước tính, dựa trên tỷ lệ tăng dân số
+              trung bình hàng năm của tỉnh Cao Bằng và số liệu tổng điều tra dân
+              số các năm gần kề.</em
+            >
+          </p>
+          <p>
+            Theo dữ liệu Sáp nhập tỉnh, thành Việt Nam 2025, Cao Bằng có diện
+            tích: 6.700 km², xếp thứ 23; dân số: 573.119 người, xếp thứ 33;
+          </p>
+          <p style="font-size: 15px">
+            (Nguồn thông tin:
+            <a
+              href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+              target="_blank"
+              >Wikipedia – Cao Bằng</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="VANHOA">
+        <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
+        <article>
+          <h2 style="font-size: 40px">
+            <strong><mark>VĂN HOÁ:</mark></strong>
+          </h2>
+          <p>
+            Cao Bằng là vùng đất có nền văn hóa đa dạng, phong phú với sự chung
+            sống của nhiều dân tộc như Tày, Nùng, Dao, Mông, Sán Chỉ, Lô Lô…,
+            mỗi dân tộc sở hữu những di sản văn hóa truyền thống riêng, đặc biệt
+            thể hiện rõ qua trang phục. Trang phục phổ biến của người Tày, Nùng
+            là sắc chàm tự dệt, tự nhuộm, thể hiện sự hòa hợp với thiên nhiên;
+            trong khi đó trang phục của người Dao, Mông, Lô Lô… rực rỡ, kết hợp
+            nhiều đồ trang sức tạo âm thanh khi di chuyển.
+          </p>
+          <p>
+            <mark><strong>Lễ hội văn hóa Cao Bằng</strong></mark
+            ><br />
+            Các lễ hội văn hóa ở Cao Bằng chủ yếu nhằm tưởng nhớ tổ tiên, cầu
+            mưa thuận gió hòa, mùa màng bội thu, cuộc sống ấm no. Người Tày có
+            tín ngưỡng đặc trưng là thờ Mẹ Trăng và các nàng tiên con gái Mẹ
+            Trăng. Lễ hội gắn liền với sinh hoạt cộng đồng và bản sắc văn hóa
+            địa phương.
+          </p>
+          <p>
+            <mark><strong>Dân ca và nghệ thuật truyền thống</strong></mark
+            ><br />
+            Trong lễ hội, du khách được thưởng thức nhiều làn điệu dân ca như:
+            Lượn slương, Lượn cọi, Lượn ngạn, hát Then – đàn tính, Páo dung…
+            cùng các điệu múa: múa sluông, múa quạt, múa khăn, múa chuông, múa
+            khèn… Đặc sắc nhất là hát Then – đàn tính, loại hình giữ vị trí quan
+            trọng trong tín ngưỡng người Tày, được coi là “điệu hát của thần
+            tiên”.
+          </p>
+          <p>
+            <mark><strong>Nghề truyền thống tiêu biểu</strong></mark
+            ><br />
+            Bên cạnh đó, Cao Bằng còn nổi tiếng với các nghề truyền thống, tiêu
+            biểu là làng rèn Phúc Sen (Quảng Uyên). Làng có <u>gần 400</u> hộ
+            dân người Nùng An, được xem là “xưởng rèn thủ công” lớn nhất miền
+            Bắc, chuyên sản xuất dao, kiếm, đao và công cụ lao động. Nghề rèn đã
+            được cha truyền con nối qua <u>hàng chục</u> đời, sản phẩm nổi tiếng
+            về độ sắc và độ bền, tiêu thụ rộng rãi trên cả nước.
+          </p>
+
+          <h2 style="font-size: 40px">
+            <strong><mark>LỄ HỘI:</mark></strong>
+          </h2>
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              <strong>-Các lễ hội tiêu biểu của tỉnh Cao Bằng:</strong>
+            </summary>
+            <ol>
+              <li>
+                <mark><strong>Lễ hội Lồng Tông (Xuống đồng)</strong></mark>
+                <p>
+                  Thời gian:
+                  <u
+                    >Thường diễn ra vào mùng 4 đến mùng 10 tháng Giêng Âm
+                    lịch</u
+                  >
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Huyện Hòa An (đặc biệt khu vực xã Hồng Việt, thị trấn Nước
+                    Hai)</u
+                  >
+                </p>
+                <p>
+                  Lễ hội Lồng Tông là lễ hội lớn tại Cao Bằng ra đời từ khi nghề
+                  trồng lúa nước đã trở thành cốt lõi trong đời sống của người
+                  Tày, Nùng vùng núi.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-1.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Lồng Tông"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Đền Kỳ Sầm</strong></mark>
+                <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Đền Kỳ Sầm, xã Vĩnh Quang, thành phố Cao Bằng, tỉnh Cao
+                    Bằng</u
+                  >
+                </p>
+                <p>
+                  Lễ hội Đền Kỳ Sầm là lễ hội Cao Bằng nổi tiếng bắt nguồn từ
+                  truyền thống tưởng nhớ công lao của Nùng Trí Cao.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-2.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Đền Kỳ Sầm"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Đền Vua Lê</strong></mark>
+                <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Đền Vua Lê, xã Hoàng Tung, huyện Hòa An, tỉnh Cao Bằng</u>
+                </p>
+                <p>
+                  Lễ hội Đền Vua Lê gắn liền với công cuộc kháng chiến của Lê
+                  Lợi và nghĩa quân Lam Sơn trong thế kỷ XV.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-3.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Đền Vua Lê"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội thác Bản Giốc</strong></mark>
+                <p>
+                  Thời gian:
+                  <u>Cuối tháng 9 hoặc đầu tháng 10 dương lịch hằng năm</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Thác Bản Giốc, xã Đàm Thủy, huyện Trùng Khánh, tỉnh Cao
+                    Bằng</u
+                  >
+                </p>
+                <p>
+                  Lễ hội thác Bản Giốc được khởi xướng nhằm khai thác tiềm năng
+                  thiên nhiên hùng vĩ và tôn vinh bản sắc văn hóa các dân tộc
+                  vùng biên giới Việt – Trung.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-4.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Thác Bản Giốc"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Chùa Sùng Phúc</strong></mark>
+                <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Chùa Sùng Phúc, xã Hưng Đạo, thành phố Cao Bằng</u>
+                </p>
+                <p>
+                  Chùa Sùng Phúc là điểm sinh hoạt tâm linh lâu đời, gắn với
+                  hành trình truyền bá Phật giáo lên vùng biên viễn.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-5.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Chùa Sùng Phúc"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Về nguồn Pác Bó</strong></mark>
+                <p>Thời gian: <u>Ngày 6 tháng 1 dương lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u
+                    >Khu di tích Pác Bó, xã Trường Hà, huyện Hà Quảng, tỉnh Cao
+                    Bằng</u
+                  >
+                </p>
+                <p>
+                  Pác Bó là nơi Chủ tịch Hồ Chí Minh chọn làm căn cứ cách mạng
+                  đầu tiên khi trở về nước.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-6.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Pác Bó"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Nàng Hai</strong></mark>
+                <p>
+                  Thời gian:
+                  <u>Thường tổ chức vào mùa xuân, khi mùa màng đã ổn định</u>
+                </p>
+                <p>
+                  Địa điểm:
+                  <u>Các làng người Tày tại Trùng Khánh và Quảng Uyên</u>
+                </p>
+                <p>
+                  Lễ hội bắt nguồn từ truyện thơ dân gian Nàng Hai của người
+                  Tày, phản ánh khát vọng hòa bình và cuộc sống no đủ.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-7.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Nàng Hai"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+
+              <li>
+                <mark><strong>Lễ hội Chùa Đà Quận</strong></mark>
+                <p>Thời gian: <u>Ngày 30 tháng Giêng Âm lịch hàng năm</u></p>
+                <p>
+                  Địa điểm:
+                  <u>Chùa Đà Quận, xã Hồng Việt, huyện Hòa An, tỉnh Cao Bằng</u>
+                </p>
+                <p>
+                  Lễ hội mang ý nghĩa cầu cho mưa thuận gió hòa, bảo vệ dân làng
+                  khỏi thiên tai.
+                </p>
+                <figure>
+                  <img
+                    src="https://cdn-media.sforum.vn/storage/app/media/le-hoi-cao-bang-8.jpg"
+                    class="w3-container"
+                    alt="Lễ hội Chùa Đà Quận"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn:
+                    <a
+                      href="https://cellphones.com.vn/sforum/le-hoi-cao-bang"
+                      target="_blank"
+                      >cellphones.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DITICH">
+        <h1 class="w3-center" style="font-size: 50px">
+          DI TÍCH, DI SẢN VĂN HOÁ
+        </h1>
+        <article>
+          <p>
+            -Sau hợp nhất, tỉnh Cà Mau (tham chiếu cấu trúc) hiện nay có tổng
+            cộng 111 di tích có giá trị lịch sử, văn hóa, khoa học. Với số lượng
+            này cho thấy sự đa dạng và phong phú của các di sản văn hóa vật thể
+            trên địa bàn tỉnh.
+          </p>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Một số di tích lịch sử:
+            </summary>
+            <ol>
+              <li>
+                Di tích hang Ngườm Chiêng<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/jh3eY6DNr1khPEHy6"
+                  target="_blank"
+                  >X2QX+CQ3, TL 203, Trường Hà, Hà Quảng, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích khảo cổ
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/d0bae836-1b2d-4eee-ba77-4d5e78511f3a-di-tich-hang-nguom-chiengjpg.jpg"
+                    class="w3-container"
+                    alt="Hang Ngườm Chiêng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích Hoàng Đình Giong<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/o4KMmLyZB1Lv4KKN6"
+                  target="_blank"
+                  >M6Q8+FPH, Đề Thám, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-văn hoá
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/d8ed1582-a3f3-46ec-b2d7-a9e3231c7b4c-di-tich-hoang-ding-giongjpg.jpg"
+                    class="w3-container"
+                    alt="Hoàng Đình Giong"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Vua Lê<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/fi5Vw93xDv72nLrN6"
+                  target="_blank"
+                  >P55G+2JP Xã, làng Đến, Hòa An, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-văn hoá
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/3b6f32fc-b043-4a01-9116-a478ce985531-den-vua-lejpeg.jpeg"
+                    class="w3-container"
+                    alt="Đền Vua Lê"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Thành Nhà Mạc<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/gTddwJ1orjmPkSsG8"
+                  target="_blank"
+                  >Cao Bình, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-kiến trúc quân sự
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/830113af-034d-4747-a99f-e7f5e17fed0d-thanh-nha-macjpg.jpg"
+                    class="w3-container"
+                    alt="Thành Nhà Mạc"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Đền Kỳ Sầm<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/vXGtob1Yug7A1YTPA"
+                  target="_blank"
+                  >M6VP+F77 Xã, Vĩnh Quang, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-văn hoá
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/3618093c-6104-4134-8c18-66e57885322f-den-ky-samjpg.jpg"
+                    class="w3-container"
+                    alt="Đền Kỳ Sầm"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Quần thể di tích chùa Đà Quận<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/k9v7Jk2vyLNKWbqF8"
+                  target="_blank"
+                  >M5PQ+4JM, Hưng Đạo, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-văn hoá-kiến trúc-tôn giáo
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/f2c4fa8a-0e92-425d-9a4e-8c61ed041a06-quan-the-di-tich-chua-da-quanjpg.jpg"
+                    class="w3-container"
+                    alt="Chùa Đà Quận"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích lịch sử Kim Đồng<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/CCzL52KmTdbbvZ5AA"
+                  target="_blank"
+                  >Trường Hà, Hà Quảng District, Cao Bang, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-cách mạng
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/2caaf284-6ac7-4b4c-ae28-478c4861afd8-khu-di-tich-lich-su-kim-dongjpg.jpg"
+                    class="w3-container"
+                    alt="Khu di tích Kim Đồng"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Rừng Trần Hưng Đạo<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/kGybhFXVdWvhDE1m9"
+                  target="_blank"
+                  >H2RR+J7X, Tam Kinh, Nguyên Bình, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-cách mạng
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/3c4c877a-bf7c-4ea5-a670-ceecd1ddf344-rung-tran-hung-daojpg.jpg"
+                    class="w3-container"
+                    alt="Rừng Trần Hưng Đạo"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Khu di tích Pác Bó<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/j9KKMgbzp78DzV3w8"
+                  target="_blank"
+                  >bản Pác Bó,Trường Hà,Hà Quảng District,Cao Bang,,Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-cách mạng
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/42de4e33-62ea-43c0-9da7-bddd47ec9aec-khu-di-tich-pac-pojpg.jpg"
+                    class="w3-container"
+                    alt="Khu di tích Pác Bó"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                Di tích lịch sử Đông Khê<br />-Địa điểm:
+                <a
+                  href="https://maps.app.goo.gl/qvQCNaxxdpuD7CMH6"
+                  target="_blank"
+                  >CCJM+37V, TT. Đông Khê, Thạch An, Cao Bằng, Vietnam</a
+                >
+                <br />-Loại di tích: Di tích lịch sử-cách mạng
+                <figure>
+                  <img
+                    src="https://images.travelviet.net/vietnam/s3/s3_amazon/208699d8-e46f-40a2-a6da-e6666d686650-di-tich-lich-su-dong-khejpg.jpg"
+                    class="w3-container"
+                    alt="Di tích Đông Khê"
+                  />
+                  <figcaption style="font-size: 15px" class="w3-animate-left">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://travelviet.net/vn/news/cao-bang/danh-sach-10-di-tich-lich-su-tai-cao-bang-thu-hut-gioi-tre"
+                      target="_blank"
+                      >travelviet.net</a
+                    >
+                    )
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+
+          <details>
+            <summary
+              class="w3-bar-item w3-button w3-padding"
+              style="font-size: large"
+            >
+              -Ngoài ra còn có các di sản văn hoá phi vật thể như:
+            </summary>
+            <ol>
+              <li>
+                -Kỹ thuật in hoa văn bằng sáp ong của người Dao Tiền<br />
+                - Loại hình: nghệ thuật truyền thống
+                <figure>
+                  <img
+                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/7/13/1539306/Di-San_11Zon.jpg"
+                    class="w3-container"
+                    alt="Sáp ong Dao Tiền"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://laodong.vn/van-hoa-giai-tri/cao-bang-co-them-3-di-san-van-hoa-phi-vat-the-cap-quoc-gia-1539306.ldo"
+                      target="_blank"
+                      >laodong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                - Chữ Nôm của người Tày<br />
+                - Loại hình: ngôn ngữ – văn tự truyền thống
+                <figure>
+                  <img
+                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/7/13/1539306/Sach_11Zon.jpg"
+                    class="w3-container"
+                    alt="Chữ Nôm người Tày"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://laodong.vn/van-hoa-giai-tri/cao-bang-co-them-3-di-san-van-hoa-phi-vat-the-cap-quoc-gia-1539306.ldo"
+                      target="_blank"
+                      >laodong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Nghệ thuật vẽ tranh thờ của người Dao đỏ<br />
+                - Loại hình: nghệ thuật truyền thống
+                <figure>
+                  <img
+                    src="https://media-cdn-v2.laodong.vn/storage/newsportal/2025/7/13/1539306/Tranh_11Zon.jpg"
+                    class="w3-container"
+                    alt="Tranh thờ Dao Đỏ"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://laodong.vn/van-hoa-giai-tri/cao-bang-co-them-3-di-san-van-hoa-phi-vat-the-cap-quoc-gia-1539306.ldo"
+                      target="_blank"
+                      >laodong.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Thực hành Then của người Tày, Nùng, Thái<br />
+                - Loại hình: Nghệ thuật trình diễn – tín ngưỡng
+                <figure>
+                  <img
+                    src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/11/21/1763681938118_149533_mua_chau_trong_dien_xuong_then_tay_15454220.jpeg"
+                    class="w3-container"
+                    alt="Thực hành Then"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.vietnam.vn/en/phat-huy-gia-tri-di-san-vi-su-phat-trien-ben-vung-noi-non-nuoc-cao-bang"
+                      target="_blank"
+                      >vietnam.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Hát dân ca dân tộc Tày<br />
+                - Loại hình: Nghệ thuật trình diễn
+                <figure>
+                  <img
+                    src="https://images.vietnamtourism.gov.vn/vn/images/2020/Hatthen.jpg"
+                    class="w3-container"
+                    alt="Dân ca Tày"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://vietnamtourism.gov.vn/post/31296"
+                      target="_blank"
+                      >vietnamtourism.gov.vn</a
+                    >,
+                    <a
+                      href="https://english.vov.vn/en/culture/cao-bang-nang-hai-festival-named-national-intangible-heritage-374118.vov"
+                      target="_blank"
+                      >english.vov.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ chia tay Phu nhân Hải trong Lễ hội Bà Hải tại xã Thạch
+                An.<br />
+                - Loại hình: Lễ hội truyền thống
+                <figure>
+                  <img
+                    src="https://vstatic.vietnam.vn/vietnam/resource/IMAGE/2025/11/21/1763681938355_149535_nghi_le_tien_nang_hai_trong_le_hoi_nang_hai_xa_thach_an_16052520.jpeg"
+                    class="w3-container"
+                    alt="Lễ chia tay Nàng Hai"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://www.vietnam.vn/en/phat-huy-gia-tri-di-san-vi-su-phat-trien-ben-vung-noi-non-nuoc-cao-bang"
+                      target="_blank"
+                      >vietnam.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                -Lễ hội Tranh đấu pháo (Quảng Uyên)<br />
+                - Loại hình: lễ hội truyền thống
+                <figure>
+                  <img
+                    src="https://tse4.mm.bing.net/th/id/OIP.c3rHdkp0pnmzmNDEaUDr_wHaFN?rs=1&pid=ImgDetMain&o=7&rm=3"
+                    class="w3-container"
+                    alt="Lễ hội tranh đấu pháo"
+                  />
+                  <figcaption style="font-size: 15px">
+                    (nguồn thông tin và hình ảnh:
+                    <a
+                      href="http://caobanggeopark.com/vi/news/tin-tuc-tong-hop/soi-dong-le-hoi-tranh-dau-phao-thi-tran-quang-uyen-quang-hoa-526.html"
+                      target="_blank"
+                      >caobanggeopark.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </li>
+            </ol>
+          </details>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="GIAODUC">
+        <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
+        <article>
+          <p>
+            <strong>Năm học 2024-2025:</strong> Tỉnh Cao Bằng có
+            <u>514 cơ sở giáo dục</u>, trong đó có <u>70 trường chuyên biệt</u>,
+            với tổng số <u>5.665 lớp</u>, <u>6.164 phòng học</u> và
+            <u>11.311 cán bộ quản lý, giáo viên, nhân viên</u>. Trong năm học
+            này, Sở GD&ĐT đã chỉ đạo và điều hành thực hiện đồng bộ các nhiệm
+            vụ, giải pháp đã đề ra, tập trung vào việc nâng cao chất lượng giáo
+            dục, xây dựng môi trường học tập thân thiện và phát triển toàn diện
+            cho học sinh.
+          </p>
+          <p>
+            <strong>Hội nghị ngành GD&ĐT:</strong> Tại Hội nghị, các đại biểu
+            tham luận, thảo luận nhiều vấn đề, đặc biệt là các giải pháp nâng
+            cao chất lượng giáo dục và xây dựng
+            <mark>“trường học hạnh phúc”</mark>. Phó Chủ tịch UBND tỉnh Cao
+            Bằng, Trịnh Trường Huy, đánh giá cao những kết quả mà ngành GD&ĐT
+            tỉnh đạt được. Đồng thời, ông nhấn mạnh trong năm học 2025-2026,
+            ngành sẽ tập trung đổi mới căn bản, toàn diện giáo dục và đào tạo,
+            triển khai <u>10 trường phổ thông nội trú liên cấp</u> tại các xã
+            biên giới, đồng thời tiếp tục nâng cao chất lượng giáo dục và đào
+            tạo.
+          </p>
+          <p>
+            <strong>Thi đua khen thưởng và hỗ trợ:</strong> Nhân dịp này, ngành
+            GD&ĐT Cao Bằng đã tổ chức công tác thi đua khen thưởng năm học
+            2024-2025. Bên cạnh đó, các cơ sở giáo dục tiếp nhận
+            <u>30 tivi</u> do VNPT Cao Bằng trao tặng nhân dịp kỷ niệm
+            <u>80 năm thành lập Bộ GD&ĐT</u>, nhằm hỗ trợ công tác giảng dạy và
+            chuẩn bị cho Lễ khai giảng năm học 2025-2026.
+          </p>
+          <p style="font-size: 15px">
+            (nguồn thông tin:
+            <a
+              href="https://giaoducthoidai.vn/giao-duc-cao-bang-tap-trung-doi-moi-nang-cao-chat-luong-post745869.html"
+              >giaoducthoidai.vn</a
+            >
+            )
+          </p>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="KINHTE">
+        <br />
+        <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
+        <article>
+          <h2 style="text-align: left">TÓM TẮT PHÁT TRIỂN KINH TẾ CAO BẰNG</h2>
+          <p>
+            <strong><mark>Kinh tế - dân số Cao Bằng năm 2018</mark></strong>
+          </p>
+          <p>
+            Năm 2018, tỉnh Cao Bằng có dân số khoảng <u>540.400 người</u>, GRDP
+            đạt <u>14.429 tỉ đồng</u> (tương đương <u>0,6267 tỉ USD</u>), GRDP
+            bình quân đầu người khoảng <u>26,7 triệu đồng</u> (~<u>1.160 USD</u
+            >), với tốc độ tăng trưởng GRDP đạt <u>7,15%</u>. Trong bảng xếp
+            hạng các tỉnh Việt Nam, Cao Bằng đứng thứ 60 về dân số, thứ 62 về
+            GRDP và GRDP bình quân đầu người, và thứ 49 về tốc độ tăng trưởng
+            GRDP. Về Chỉ số năng lực cạnh tranh cấp tỉnh (PCI), Cao Bằng xếp thứ
+            58/63 tỉnh, thành phố.
+          </p>
+
+          <p>
+            <strong><mark>Giai đoạn 2016–2020</mark></strong>
+          </p>
+          <p>
+            Tỉnh không ngừng phát triển với tốc độ tăng trưởng kinh tế ước đạt
+            <u>6,57%/năm</u>, thu nhập bình quân đầu người ước đạt
+            <u>1.100 USD/người/năm</u>, tổng vốn đầu tư toàn xã hội chiếm
+            <u>58,72% GRDP</u>, thu ngân sách bình quân vượt dự toán trung ương
+            khoảng <u>27%/năm</u>. Tỷ lệ giảm nghèo bình quân trên 3%/năm, các
+            huyện nghèo giảm trên 4%/năm, tỷ lệ che phủ rừng đạt <u>54,5%</u>.
+            Dân cư thành thị sử dụng nước sạch trên 86%, dân cư nông thôn sử
+            dụng nước hợp vệ sinh trên 88%. Giai đoạn 2016–2018, 87 dự án được
+            cấp chứng nhận đầu tư với tổng vốn <u>12.308 tỉ đồng</u>.
+          </p>
+
+          <p>
+            <strong><mark>Dự kiến kết quả cuối giai đoạn</mark></strong>
+          </p>
+          <p>
+            Đến hết giai đoạn, 17/17 chỉ tiêu đều đạt và vượt kế hoạch, trong đó
+            tốc độ tăng trưởng kinh tế ước đạt <u>7%</u>, GRDP bình quân đầu
+            người khoảng <u>24,9 triệu đồng</u> (~<u>1.100 USD</u>), thu ngân
+            sách địa phương ước đạt <u>1.550 tỉ đồng</u> (tăng 37,9% so với dự
+            toán trung ương), tổng kim ngạch xuất nhập khẩu ước đạt 680 triệu
+            USD, tổng kim ngạch giám sát trên 2.500 triệu USD. Tỷ lệ hộ nghèo
+            giảm trên 3%, tỷ lệ che phủ rừng giữ ổn định <u>54,5%</u>, năm 2018
+            có 26 dự án được cấp chứng nhận đầu tư với tổng vốn
+            <u>2.025 tỉ đồng</u>.
+          </p>
+
+          <h2 style="text-align: center">Biểu đồ GRDP Cao Bằng 2015–2024</h2>
+          <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
+
+          <figure style="width: 80%; margin: auto" class="chart-container">
+            <canvas id="grdpChart"></canvas>
+            <figcaption style="font-size: 15px; margin-top: 10px">
+              <p>
+                <strong>Lưu ý:</strong>
+                <em
+                  >số liệu các năm trên chỉ là ước tính, dựa trên tốc độ tăng
+                  trưởng GRDP trung bình và dữ liệu năm 2018</em
+                >
+              </p>
+              <p>
+                (nguồn thông tin:
+                <a
+                  href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
+                  target="_blank"
+                  >Wikipedia – Cao Bằng</a
+                >)
+              </p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <script>
+          const ctx = document.getElementById("grdpChart");
+          new Chart(ctx, {
+            type: "bar",
+            data: {
+              labels: [
+                "2015",
+                "2016",
+                "2017",
+                "2018",
+                "2019",
+                "2020",
+                "2021",
+                "2022",
+                "2023",
+                "2024",
+              ],
+              datasets: [
+                {
+                  label: "GRDP Cao Bằng (tỉ đồng)",
+                  data: [
+                    11000, 11200, 11400, 14429, 14550, 14700, 14850, 15000,
+                    15200, 15500,
+                  ],
+                  backgroundColor: "#4CAF50",
+                  yAxisID: "y",
+                },
+                {
+                  label: "Tăng trưởng GRDP (%)",
+                  data: [3, 3, 3, 2, 2, 2, 3, 4, 7.15, 4],
+                  backgroundColor: "#FF9800",
+                  yAxisID: "y1",
+                },
+              ],
+            },
+            options: {
+              responsive: true,
+              plugins: {
+                legend: { position: "top" },
+              },
+              scales: {
+                y: {
+                  beginAtZero: true,
+                  position: "left",
+                  title: {
+                    display: true,
+                    text: "GRDP (tỉ đồng)",
+                  },
+                },
+                y1: {
+                  beginAtZero: true,
+                  position: "right",
+                  grid: { drawOnChartArea: false },
+                  title: {
+                    display: true,
+                    text: "Tăng trưởng (%)",
+                  },
+                },
+                x: {
+                  title: {
+                    display: true,
+                    text: "Năm",
+                  },
+                },
+              },
+            },
+          });
+        </script>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="AMTHUC">
+        <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
+        <h2>-Cao Bằng có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
+        <article>
+          <ol>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh áp chao
+                </summary>
+                <p>
+                  Bánh áp chao thường được bày bán nhiều trong các quán nhỏ hoặc
+                  vỉa hè mỗi độ đông về. Bên ngoài bánh trông khá giống bánh rán
+                  nhưng phần nhân được làm bằng thịt vịt. Vì vậy ngoài tên gọi
+                  bánh áp chao, loại bánh này còn được gọi là bánh vịt chao.
+                </p>
+                <p>
+                  Nguyên liệu để làm bánh áp chao không quá cầu kỳ, chỉ bao gồm
+                  bột gạo tẻ, bột gạo nếp và nhân thịt vịt. Người thợ làm bánh
+                  lấy một lượng bột vừa đủ, nhồi nhân vào giữa, ép bánh lại và
+                  thả từ từ vào chảo dầu sôi, chao qua chao lại cho đến khi cả 2
+                  mặt bánh chín vàng rộm. Chiếc bánh thơm phức nóng hổi này
+                  chính là nét ẩm thực Cao Bằng đặc trưng rất riêng của vùng Tây
+                  Bắc.
+                </p>
+                <p>
+                  -Giá tham khảo: 5.000 – 7.000 đ/chiếc<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/HPt6UEcMAVV8Qizw7"
+                    target="_blank"
+                    >sau nhà hàng Thu Tường, ngõ 47 Phố Lý Tự Trọng, P. Hợp
+                    giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-1.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh áp chao"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Phở chua
+                </summary>
+                <p>
+                  Phở chua là một trong những đặc sản Cao Bằng góp phần làm
+                  phong phú nền ẩm thực của các tỉnh phía Bắc. Phở chua được tạo
+                  bởi nhiều gia vị và thành phần: thịt ba chỉ, khoai tầu cắt sợi
+                  chiên giòn màu vàng sậm; gan heo cắt mỏng, dạ dày heo được làm
+                  sạch, luộc qua rồi sau đó mới đem rán; thịt vịt quay được tẩm
+                  ướp các loại gia vị, trong đó có lá mác mật; bánh phở Cao Bằng
+                  thơm dai;...
+                </p>
+                <p>
+                  Phở chua xuất hiện nhiều trong các quán ăn hoặc trong các gian
+                  hàng ẩm thực của các chợ ở Cao Bằng. Lần đầu thưởng thức có
+                  thể bạn chưa thể cảm nhận được hết cái ngon và hương vị đậm đà
+                  của phở chua. Nhưng khi đã ăn quen thì chắc chắn bạn sẽ nhớ
+                  mãi không quên từng hương vị chua ngọt đến nước sốt, bánh phở
+                  dẻo dai của món ăn này.
+                </p>
+                <p>
+                  -Giá tham khảo: 25.000 – 35.000 đ/bát<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/R1qTNG31s9CtFYpq8"
+                    target="_blank"
+                    >Hợp Giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-2.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Phở chua"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Lợn sữa quay
+                </summary>
+                <p>
+                  Một đặc sản Cao Bằng khác nhất định bạn phải ăn thử khi đến
+                  đây chính là lợn sữa quay. Lợn được chọn để quay là lợn địa
+                  phương nặng từ 4-6 kg. Sau khi sơ chế xong, người làm sẽ dùng
+                  giấy bản thấm khô mình lợn. Sau đó, họ tiếp tục nhồi lá mác
+                  mật và các gia vị khác vào bụng của lợn rồi khâu lại.
+                </p>
+                <p>
+                  Người ta dùng cây tre xuyên từ mõm tới đuôi lợn rồi quay trên
+                  bếp than hồng. Vừa quay vừa phết mật ong và các gia vị khác
+                  lên mình lợn để lợn được giòn bì và khỏi nứt. Thịt chín vừa
+                  tới với bì vàng rộm, giòn tan mang một hương thơm nức mũi.
+                  Chấm thịt lợn quay với nước chấm được người dân Cao Bằng pha
+                  chế đặc biệt nữa thì ngon không cưỡng lại được luôn ấy.
+                </p>
+                <p>
+                  -Giá tham khảo: ~500.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/MapEVoTHGef3qDT1A"
+                    target="_blank"
+                    >M778+73X, Nà Cạn, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-3-scaled.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Lợn sữa quay"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Xôi trám Cao Bằng
+                </summary>
+                <p>
+                  Xôi trám là món ăn đặc sản của Cao Bằng mà du khách sẽ gặp rất
+                  nhiều tại Cao Bằng. Dù là bữa ăn ấm cúng dịp cuối tuần của gia
+                  đình cho đến bữa tiệc cưới tại nhà hàng sang trọng, bạn cũng
+                  sẽ dễ dàng thưởng thức món xôi trám này.
+                </p>
+                <p>
+                  Xôi có mùi thơm dịu của nếp nương hòa với mùi thơm ngai ngái
+                  của trái trám rừng thật đặc biệt. Vị bùi từ trái trám bao trọn
+                  lấy những hạt nếp dẻo mọng, dù ăn nhiều cũng không thấy ngán
+                  hay nóng ở cổ.
+                </p>
+                <p>
+                  -Giá tham khảo: 10.000 – 30.000 đ/phần<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/CvDTbeNkDrVB7VPF6"
+                    target="_blank"
+                    >38 Phố Lý Tự Trọng, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-4.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Xôi trám Cao Bằng"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Cá chiên sông Gâm
+                </summary>
+                <p>
+                  Một đặc sản Cao Bằng khác mà digiticket.vn giới thiệu đến bạn
+                  chính là món Cá chiên sông Gâm. Loại cá lăng đen này được đánh
+                  giá là loại cá ngon nhất, phù hợp để làm chả cá. Lòng cá chiên
+                  được các thực khách sành ăn cho là thứ ngon nhất ở trên cuộc
+                  đời.
+                </p>
+                <p>
+                  Cá chiên có con nặng tới vài chục ký, thường khó bắt vì chúng
+                  thường sống ở các hang ngầm dưới sông. Người đi câu thường
+                  phải đóng cả lán trại để đợi cá, khi câu được sẽ có người đến
+                  mua ngay tại chỗ. Vì thế món cá này rất được thực khách săn
+                  đón.
+                </p>
+                <p>
+                  -Giá tham khảo: 400.000 – 1.000.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/usjSMWCJt52ZroBi8"
+                    target="_blank"
+                    >TT. Bảo Lạc, Bảo Lạc District, Cao Bang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-5.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Cá chiên sông Gâm"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Rau dạ hiến
+                </summary>
+                <p>
+                  Rau dạ hiến hay còn được gọi là rau bồ khai hoặc Phjắc diển
+                  theo tiếng Tày - Nùng. Loại rau này thường mọc dại ở vùng núi
+                  đá, thuộc dòng cây thân dây rất giòn và dễ gãy. Dù là rau dại
+                  mọc hoang nhưng bạn cũng không dễ dàng để tìm thấy rau này đâu
+                  nhé. Khoảng thời gian từ tháng 2 đến tháng 7 âm lịch, ai vào
+                  rừng hái được một nắm rau dạ hiến là rất quý rồi.
+                </p>
+                <p>
+                  Rau dạ hiến được xào với thịt bò, lòng lợn hoặc lòng gà, được
+                  dùng để phục vụ trong các bữa tiệc tại Cao Bằng. Món rau rừng
+                  này có hương vị rất đặc biệt dường như chỉ có ở Cao Bằng mới
+                  có nên thực khách đến đây ai cũng muốn được ăn thử một lần.
+                </p>
+                <p>
+                  -Giá tham khảo: 5.000 – 10.000 đ/bó<br />
+                  Ở quán ăn/nấu sẵn (xào, luộc): 20.000 – 40.000 đ/đĩa<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/HcpnkwJRc1Wkwanc6"
+                    target="_blank"
+                    >Phai Khắt Nà Ngần, P. Sông Hiến, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-6.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Rau dạ hiến"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh cuốn
+                </summary>
+                <p>
+                  Bánh cuốn có lẽ là món ăn đã quá quen thuộc với mỗi chúng ta
+                  nhưng người dân Cao Bằng lại có cách thưởng thức bánh rất
+                  riêng và độc đáo hơn các vùng khác. Bánh cuốn tại đây được
+                  chấm với nước dùng ninh từ xương chứ không ăn với nước mắm như
+                  người Hà Nội. Có lẽ cũng vì thế mà một số người gọi bánh cuốn
+                  Cao Bằng là bánh canh.
+                </p>
+                <p>
+                  Nước canh được ninh từ xương lợn từ tối hôm trước, cho thêm
+                  một ít thịt băm nhuyễn và một chút hành hoa mỡ trông thật ngon
+                  miệng. Hấp dẫn hơn cả vẫn là bánh cuốn trứng nóng hổi. Khi ăn,
+                  bạn sẽ cảm nhận được vị ngọt từ xương hòa quyện cùng vị dai
+                  của bánh trong nước dùng cùng hương thơm của hành và thịt bằm.
+                </p>
+                <p>
+                  -Giá tham khảo: 15.000 – 30.000 đ/suất<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/P7F45P4reb73k7gF6"
+                    target="_blank"
+                    >Phố Cũ, Cao Bang, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-7.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh cuốn"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh trứng kiến (Pẻng Rày)
+                </summary>
+                <p>
+                  Loại bánh nào nổi tiếng ở Cao Bằng? Digi xin giới thiệu tiếp
+                  về bánh trứng kiến. Đó là món ăn độc đáo của người Tày thuộc
+                  vùng núi Đông Bắc nước ta. Nguyên liệu chính tạo nên món ăn
+                  này chính là trứng kiến. Nếu bạn muốn thưởng thức món bánh đặc
+                  sản Cao Bằng này thì hãy đến đây vào tháng 4 và tháng 5 bởi
+                  đây là thời gian sinh trưởng mạnh nhất của loại kiến đen rừng.
+                </p>
+                <p>
+                  Trứng kiến được rửa sạch sẽ, bắc lên chảo phi thơm với hành
+                  khô. Để ngon hơn, người ta thường cho thêm một ít thịt lợn
+                  băm, lạc rang và lá kiệu vào nhân. Phần bánh được làm từ gạo
+                  nếp nương, được đãi sạch và ngâm với nước lạnh qua đêm. Bột
+                  nếp sau khi được nhào nặn thật dẻo sẽ được cán mỏng thành hình
+                  vuông to bằng bàn tay.
+                </p>
+                <p>
+                  Miếng bột nếp đó được ốp vào một chiếc lá vả, sau đó rắc nhân
+                  lên và ốp thêm một chiếc lá vả nữa. Tiếp đó người làm sẽ gói
+                  sao cho phần bánh và phần nhân được bọc trọn vẹn và không bị
+                  hở ra bên ngoài. Hấp bánh cách thủy từ 45-50 phút là có thể
+                  thưởng thức được rồi đấy.
+                </p>
+                <p>
+                  -Giá tham khảo: 20.000 – 30.000 đ/chiếc<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/6Gjs3SzwCeJLQT4cA"
+                    target="_blank"
+                    >072 Vườn Cam, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-8.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh trứng kiến"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Vịt quay 7 vị
+                </summary>
+                <p>
+                  Món ăn này được gọi là vịt quay 7 vị bởi vì người dân Cao Bằng
+                  đã dùng 7 loại gia vị khác nhau để tẩm ướp thịt vịt. Vịt quay
+                  chín với lớp da màu vàng mật hấp dẫn, thịt chắc và không bị bở
+                  và cũng không bị dai.
+                </p>
+                <p>
+                  Bên trong từng miếng vịt quay là mùi hương ngai ngái như mùi
+                  lá non, có chút đắng nhẹ nhưng càng ăn càng thấy ngọt thịt.
+                  Điều đó là do sự tẩm ướp độc đáo 7 loại gia vị trong bụng vịt.
+                  Du khách ăn qua món này đều đoán rằng hẳn trong 7 loại gia vị
+                  ấy có rất nhiều vị của rễ, lá cây mang từ rừng về.
+                </p>
+                <p>
+                  -Giá tham khảo: 300.000 – 400.000 đ/con<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/feek1LzHybBEofef7"
+                    target="_blank"
+                    >05 Hoàng Như, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-9-1.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Vịt quay 7 vị"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bò gác bếp
+                </summary>
+                <p>
+                  Nếu có dịp đến Cao Bằng, bạn đừng quên thưởng thức món thịt bò
+                  gác bếp này nhé. Hầu hết thịt bò nào cũng có thể sấy khô nhưng
+                  phần ngon nhất chính là thịt mông và thịt bắp. Thịt được người
+                  dân xẻ ra thành từng miếng to nhỏ khác nhau nhưng thường sẽ to
+                  bằng 2-3 ngón tay và dài chừng 1 gang tay là vừa ăn nhất.
+                </p>
+                <p>
+                  Thịt bò được ướp bằng muối, nước cốt gừng và rượu trắng. Trước
+                  khi ướp, người ta thường khía vài đường lên miếng thịt để gia
+                  vị thấm đều hơn. Sau đó dùng lạt tre tươi để xâu thịt thành
+                  từng xâu rồi treo trên gác bếp. Món ăn này cũng là một gợi ý
+                  hay để bạn mua về đặc sản Cao Bằng làm quà đấy.
+                </p>
+                <p>
+                  -Giá tham khảo: 160.000 – 180.000 đ/250 g<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/H5BYyYcQ4p8TzHGN6"
+                    target="_blank"
+                    >M776+W6G, Phố Kim Đồng, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-10.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bò gác bếp"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Quả mác mật
+                </summary>
+                <p>
+                  Mác mật là tên được gọi theo tiếng Tày - Nùng, có thể hiểu nôm
+                  na là quả ngọt. Mác mật là một gia vị không thể thiếu khi chế
+                  biến các món ăn đặc trưng của người miền núi như vịt quay, lợn
+                  quay, cá kho, ninh chân giò,... Mùi thanh tao từ mác mật đã
+                  khử hết mùi tanh của cá, mùi hôi của vịt,... tạo nên các món
+                  ăn hấp dẫn và tinh tế.
+                </p>
+                <p>
+                  Quả mác mật vừa có thể để ăn chơi vừa có thể chế biến thành
+                  món ăn. Mác mật ngâm có đầy đủ hương vị chua, cay, mặn, ngọt
+                  dùng để khai vị, pha nước chấm hay gia giảm vào các món ăn
+                  khác đều rất ngon. Ngoài ra, vào mùa mác mật rộ quả, người ta
+                  thường lấy về phơi hoặc sấy khô để dùng dần hoặc cho vào khay
+                  đá tủ lạnh để bảo quản và dùng được quanh năm.
+                </p>
+                <p>
+                  -Giá tham khảo: ~ 230.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/iKYFg2MEkBEG21T28"
+                    target="_blank"
+                    >072 Vườn Cam, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-11.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Quả mác mật"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Cá Trầm Hương (Bản Giốc)
+                </summary>
+                <p>
+                  Trầm Hương là loài cá ngon trứ danh tại thác Bản Giốc, thuộc
+                  huyện Trùng Khánh của tỉnh Cao Bằng. Loài cá này thường ăn rễ
+                  và lá mục của cây trầm hương nên mới có tên gọi như thế. Cá
+                  trầm hương nướng là cách chế biến ngon nhất vì giữ nguyên được
+                  mùi vị của cá.
+                </p>
+                <p>
+                  Cá được làm sạch, mổ bụng rồi nhét vào đó một vài loại rau và
+                  gia vị như hành, ớt, thì là,... Sau đó cá được bọc qua bằng
+                  một lớp lá chuối rồi cho lên bếp than nướng. Khi chín, cá tỏa
+                  ra mùi thơm phức. Gỡ một miếng cá chấm cùng nước mắm nguyên
+                  chất sẽ làm cho thực khách cảm nhận rõ từng hương vị đặc biệt
+                  của món ăn này.
+                </p>
+                <p>
+                  -Giá tham khảo: ~150.000 – 300.000 đ/đĩa tùy phần & quán<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/syN9KD1RSxhfHEqc6"
+                    target="_blank"
+                    >Thac Ban Gioc, Đàm Thuỷ, Trùng Khánh, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-12.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Cá Trầm Hương"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Miến dong Phia Đén
+                </summary>
+                <p>
+                  Miến dong Phia Đén hay còn gọi là miến dong Cao Bằng hoặc miến
+                  dong Nguyên Bình. Sợi miến to, không bóng như các loại miến
+                  thông thường khác nhưng lại quyến rũ thực khách bởi sự thơm
+                  ngon nguyên chất.
+                </p>
+                <p>
+                  Miến dong Phia Đén được làm hoàn toàn từ củ dong riềng đỏ được
+                  trồng tại các sườn núi ở huyện Nguyên Bình. Sau khi thu hoạch,
+                  củ dong riềng đỏ được phơi trên phên nứa, không sử dụng chất
+                  tẩy, chất tạo màu hay các hóa chất nào khác. Miến khi nấu sợi
+                  mềm thơm, trong và dai, ngọt mát rất ngon và tốt cho sức khỏe.
+                </p>
+                <p>
+                  -Giá tham khảo: 90.000 – 110.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/aXebvMvMamjp1x3HA"
+                    target="_blank"
+                    >Tổ 4 Khu 2, TT. Tĩnh Túc, Nguyên Bình, Cao Bằng 21514,
+                    Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-13.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Miến dong Phia Đén"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Mận Bảo Lạc
+                </summary>
+                <p>
+                  Hầu hết các huyện ở Cao Bằng đều trồng mận nhưng mận ở huyện
+                  Bảo Lạc được cho là ngon nhất. Mận Bảo Lạc khi chín có màu đỏ
+                  (người dân thường gọi là mận máu) có lớp vỏ nhẵn bóng. Quả to
+                  bằng đầu ngón chân cái, khi ăn có vị ngọt dịu chứ không chua
+                  như các loại mận khác.
+                </p>
+                <p>
+                  -Giá tham khảo: ~80.000 – 90.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/BB4fhSucht4iNvC97"
+                    target="_blank"
+                    >Cầu, TT. Bảo Lạc, Bảo Lạc, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-14.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Mận Bảo Lạc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Bánh khảo Thông Huề
+                </summary>
+                <p>
+                  Bánh khảo được xem là một loại lương khô của người Tày - Nùng
+                  tại Cao Bằng. Bánh thường được làm vào dịp Tết và có thể để
+                  lâu mà không bị mốc hay ôi thiu. Để làm nên những chiếc bánh
+                  khảo, đòi hỏi bàn tay người làm phải thật khéo léo.
+                </p>
+                <p>
+                  Bất kỳ ai có dụng cụ cũng có thể làm được bánh khảo, nhưng để
+                  có thể làm và "ăn thật ngon" thì không phải chuyện dễ dàng.
+                  Món bánh đặc sản Cao Bằng này cũng được rất nhiều thực khách
+                  lựa chọn để mua về làm quà biếu.
+                </p>
+                <p>
+                  -Giá tham khảo: ~80.000 – 150.000 đ/hộp (~10 chiếc)<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/J9x3AqaNHhkbsdQt8"
+                    target="_blank"
+                    >QG92+9FH, Thông Huề, Trùng Khánh, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-15.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Bánh khảo Thông Huề"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Hạt dẻ Trùng Khánh
+                </summary>
+                <p>
+                  Cao Bằng có điều kiện khí hậu mát mẻ cùng thổ nhưỡng trời ban
+                  nên hạt dẻ ở Trùng Khánh rất nhiều và ngon. Loại hạt dẻ nhỏ
+                  nhất cũng phải lớn bằng ngón chân cái, hạt màu vàng sẫm và bùi
+                  thơm đặc biệt.
+                </p>
+                <p>
+                  Để chế biến thành các món ăn, hạt dẻ thường phải luộc rất kỹ
+                  bởi lớp vỏ rất cứng. Có người còn cẩn thận khía một vài đường
+                  trên vỏ hạt để khi hạt dẻ chín có thể dễ bóc hơn. Sau khi luộc
+                  chín, đem hạt dẻ rang lại một lượt sẽ làm dậy mùi tự nhiên.
+                  Hạt dẻ dùng để ninh cùng chân giò như một món hầm, có thể xay
+                  thành bột để làm nhân bánh hoặc có thể ăn như hạt mít hấp,...
+                </p>
+                <p>
+                  -Giá tham khảo: ~120.000 – 150.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/L8UeK5p1vQJ6F34R7"
+                    target="_blank"
+                    >RGPF+2WR, Tổ 5, Trùng Khánh, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-16.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Hạt dẻ Trùng Khánh"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Lê Đông Khê
+                </summary>
+                <p>
+                  Đông Khê là vùng đất có các điều kiện thích hợp để trồng cây
+                  lê. Lê Đông Khê cho quả ngọt mát, thơm ngon và trở thành đặc
+                  sản Cao Bằng nổi tiếng mà ai đến đây cũng muốn mua về một ít
+                  để làm quà. Lê Đông Khê còn được xem là sản vật quý của núi
+                  rừng và là niềm tự hào của người dân ở Cao Bằng.
+                </p>
+                <p>
+                  -Giá tham khảo: ~50.000 – 70.000 đ/kg<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/2VyBycdNekX1xwF58"
+                    target="_blank"
+                    >CCGP+V25, TT. Đông Khê, Thạch An, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-17.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Lê Đông Khê"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding">
+                  Lạp xưởng hun khói
+                </summary>
+                <p>
+                  Lạp xưởng ở Cao Bằng được làm to hơn và có cách chế biến cầu
+                  kỳ hơn các vùng khác. Lòng non được người ta rửa sạch bằng
+                  rượu trắng. Nhân lạp xưởng là thịt thăn, nạc vai hoặc nạc mông
+                  được lấy từ lợn mán đen. Thịt được bằm nhỏ, sau đó tẩm ướp các
+                  gia vị, hành băm, hạt mắc khén và chút rượu để tạo mùi thơm
+                  khác biệt.
+                </p>
+                <p>
+                  Nhân được nhồi thật chắc vào ruột, sao cho miếng lạp xưởng
+                  tròn đều và căng bóng. Sau đó đem lạp xưởng ra phơi nắng
+                  khoảng 3 ngày rồi treo lên gác bếp hoặc đem đi hun khói với bã
+                  mía.
+                </p>
+                <p>
+                  Hơi ấm từ lửa làm cho lạp xưởng se lại, săn chắc và càng thơm
+                  đậm đà hơn với mùi ngọt thoảng của bã mía. Miếng lạp sườn được
+                  nắng, được hơi từ lửa ánh lên màu đỏ hồng của thịt nạc xen các
+                  đường vân trắng ngà của thịt mỡ trông rất hấp dẫn.
+                </p>
+                <p>
+                  -Giá tham khảo: ~150.000 đ/gói<br />
+                  -Địa chỉ thưởng thức:
+                  <a
+                    href="https://maps.app.goo.gl/sp2j7WFkKaP91PsH8"
+                    target="_blank"
+                    >126 Vườn Cam, P. Hợp giang, Cao Bằng, Vietnam</a
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://digiticket.vn/blog/wp-content/uploads/2021/07/dac-san-cao-bang-18.jpg"
+                    class="w3-container"
+                    style="max-width: 400px"
+                    alt="Lạp xưởng hun khói"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://digiticket.vn/blog/dac-san-cao-bang/"
+                      target="_blank"
+                      >digiticket.vn</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <section class="w3-row w3-padding-16" id="DULICH">
+        <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
+        <h2>-Cao Bằng có những điểm du lịch nổi tiếng như:</h2>
+        <article>
+          <ol>
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Khu di tích Pác Bó
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Nhắc đến Cao Bằng, người ta thường nhớ ngay đến khu di tích
+                  Pác Bó – nơi Bác Hồ vĩ đại đã sinh sống và làm việc trong
+                  những ngày tháng Cách Mạng của dân tộc ta. Qua những bài thơ
+                  của Bác, ta cũng mường tượng được phần nào khung cảnh thiên
+                  nhiên hoang sơ, trữ tình nhưng chỉ khi đến tận nơi, du khách
+                  mới cảm nhận được không khí trong lành, mát mẻ cùng cảnh vật
+                  giản dị mà có sức hút bất ngờ.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Các cụm di tích:</strong></mark
+                  ><br />
+                  Khu di tích Pác Bó là một trong những địa điểm du lịch Cao
+                  Bằng rộng, gồm nhiều cụm di tích khác nhau như: cụm di tích
+                  khu vực đầu nguồn, cụm di tích Kim Đồng, cụm di tích Bó Bẩm,
+                  cụm di tích Khuổi Nặm, các điểm lưu niệm trung tâm,…
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/AoaErUwTJPGE1uhU6"
+                      target="_blank"
+                      >xã Trường Hà, huyện Hà Quảng, tỉnh Cao Bằng</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-2.jpg"
+                    class="w3-container"
+                    alt="Khu di tích Pác Bó"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Khu di tích quốc gia đặc biệt rừng Trần Hưng Đạo
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Với những người yêu lịch sử thì chắc chắn đây là một địa điểm
+                  du lịch Cao Bằng không thể bỏ lỡ. Đến với khu di tích quốc gia
+                  đặc biệt rừng Trần Hưng Đạo, du khách có thể tham quan rất
+                  nhiều địa điểm quan trọng như: địa điểm thành lập Đội Việt Nam
+                  Tuyên truyền Giải phóng quân, đỉnh Slam Cao, Hang Thẳm Khẩu,
+                  Đồn Phai Khắt, Đồn Nà Ngần, thung lũng Vạ Phá,…
+                </p>
+                <p class="detail-content">
+                  Ngoài ra, du khách còn được tham quan nhà tưởng niệm, nhà
+                  trưng bày,… nên có thể hiểu hơn về cuộc sống sinh hoạt của ông
+                  cha ta ngày xưa, từ đó thêm tự hào về lịch sử, trân trọng hơn
+                  những ngày tháng đang có.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/s7hpzEMBhiSMXfAc6"
+                      target="_blank"
+                      >H2RR+J7X, Tam Kinh, Nguyên Bình, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-4.jpg"
+                    class="w3-container"
+                    alt="Rừng Trần Hưng Đạo"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Di tích lưu niệm Hoàng Đình Giong
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Di tích này là nơi tưởng nhớ người anh hùng kiên trung Hoàng
+                  Đình Giong. Đây là một trong những địa điểm du lịch Cao Bằng
+                  được nhiều trường học lựa chọn không chỉ bởi có vẻ đẹp trang
+                  nghiêm mà còn bởi di tích này có ý nghĩa giáo dục lớn đối với
+                  thế hệ trẻ. Với không khí trong lành, thoáng đãng, đây cũng có
+                  thể là sự lựa chọn hoàn hảo cho du khách khi đến với mảnh đất
+                  Cao Bằng.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/VU2ySM7AqWTzzGyDA"
+                      target="_blank"
+                      >M6Q8+FPH, Đề Thám, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-5.jpg"
+                    class="w3-container"
+                    alt="Hoàng Đình Giong"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Thác Bản Giốc
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Đến Cao Bằng mà không ghé thăm Thác Bản Giốc sẽ là một sự
+                  thiếu sót lớn bởi đây là địa điểm du lịch Cao Bằng nổi tiếng
+                  gần xa. Được biết đến là một trong những thác nước đẹp nhất
+                  Đông Nam Á, thác Bản Giốc tạo ấn tượng với du khách bởi vẻ đẹp
+                  hùng vĩ.
+                </p>
+                <p class="detail-content">
+                  Vào bất kể mùa mưa hay mùa khô, đây cũng là một địa điểm thú
+                  vị du khách có thể ghé đến thăm quan bởi mỗi mùa lại mang đến
+                  một nét riêng cho con thác này.
+                </p>
+                <p class="detail-content">
+                  Nếu mùa mưa, thác Bản Giốc mang vẻ đẹp của sự hùng vĩ, trang
+                  nghiêm thì khi mùa khô đến, con thác lại có một vẻ dịu dàng,
+                  không còn ầm ầm nước chảy. Là một người yêu thiên nhiên, chắc
+                  chắn đây là địa điểm du lịch Cao Bằng du khách không thể bỏ
+                  lỡ.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/dY63p5iU9eCC9FaH7"
+                      target="_blank"
+                      >Sông Quy Xuân, Đàm Thuỷ, Trùng Khánh, Cao Bằng,
+                      Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-7.jpg"
+                    class="w3-container"
+                    alt="Thác Bản Giốc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Hồ Thang Hen
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Địa điểm du lịch Cao Bằng tiếp theo mà Tico Travel muốn giới
+                  thiệu chính là Hồ Thang Hen. Là một điểm không thu vé nên mọi
+                  người có thể đến tham quan hồ Thang Hen bất cứ lúc nào, chắc
+                  chắn vẻ đẹp thơ mộng sẽ làm say lòng du khách.
+                </p>
+                <p class="detail-content">
+                  Không chỉ được chiêm ngưỡng, chụp ảnh với trời xanh mây trắng,
+                  núi non điệp trùng, du khách còn có cơ hội hiểu hơn về một
+                  truyền thuyết huyền bí gắn với hồ Thang Hen. Hãy đến để tận
+                  tai lắng nghe và cảm nhận về truyền thuyết này nhé!
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/jZnyt4Q91WRjboRGA"
+                      target="_blank"
+                      >Quốc Toản, Trà Lĩnh District, Cao Bang, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-17.jpg"
+                    class="w3-container"
+                    alt="Hồ Thang Hen"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đèo Mã Phục
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Đèo Mã Phục được mệnh danh là con đèo 7 tầng uốn lượn đẹp nhất
+                  Cao Bằng và chắc chắn đây sẽ là địa điểm để lại ấn tượng sâu
+                  sắc cho du khách khi đến đây. Bởi khi đứng ở đèo Mã Phục nhìn
+                  xuống, du khách có thể chiêm ngưỡng một bức tranh thiên nhiên
+                  tuyệt đẹp.
+                </p>
+                <p class="detail-content">
+                  Không quá hoa mỹ nhưng bức tranh núi rừng Đông Bắc bình dị lại
+                  là điều níu chân du khách gần xa. Nếu có dịp đến mảnh đất này,
+                  hãy một lần đến đèo Mã Phục bởi nơi đây xứng đáng là một trong
+                  những địa điểm du lịch Cao Bằng đẹp nhất.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/bte1SXZYdzRqwaDs5"
+                      target="_blank"
+                      >Quốc Toản, Trà Lĩnh District, Cao Bang, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-6.jpg"
+                    class="w3-container"
+                    alt="Đèo Mã Phục"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Nghiêu Sơn Lĩnh
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Không cần đi đâu quá xa, chỉ rời trung tâm thành phố Cao Bằng
+                  khoảng 2km là du khách đã có thể chiêm ngưỡng khung cảnh thiên
+                  nhiên Nghiêu Sơn Lĩnh. Mặt nước xanh trong soi bóng núi rừng
+                  chính là điều mà du khách thích thú nhất khi đến địa điểm này.
+                </p>
+                <p class="detail-content">
+                  Lý do để Nghiêu Sơn Lĩnh được nhiều người yêu thích còn bởi
+                  nơi đây chính là một di tích lịch sử với nhiều chiến công hào
+                  hùng, hiển hách. Cũng chính vì vậy mà bất kỳ ai khi đến cũng
+                  đều có một cảm giác trân trọng, tự hào về địa điểm du lịch Cao
+                  Bằng – Nghiêu Sơn Lĩnh.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/pCCfkv45pbMiBrLL7"
+                      target="_blank"
+                      >xã Hồng Việt, Hoàng Tung, Bế Triều, thành phố Cao Bằng,
+                      tỉnh Cao Bằng</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-18.jpg"
+                    class="w3-container"
+                    alt="Nghiêu Sơn Lĩnh"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Vườn quốc gia Phja Oắc – Phja Đén
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Vườn quốc gia Phja Oắc là một địa điểm du lịch Cao Bằng có
+                  diện tích lớn. Trong khuôn viên khu vườn, có rất nhiều địa
+                  điểm thăm quan khác nhau để du khách chiêm ngưỡng và chụp ảnh.
+                </p>
+                <p class="detail-content">
+                  Với vẻ đẹp lung linh rực rỡ của nhiều loài cỏ cây, hoa lá,
+                  Phja Oắc được ví như là một Đà Lạt thứ hai của đất nước, thu
+                  hút đông đảo du khách gần xa đến thăm.
+                </p>
+                <p class="detail-content">
+                  Với độ cao <u>1.931 m</u>, đỉnh núi Phja Oắc chính là nóc nhà
+                  của Cao Bằng, nơi du khách có thể thỏa sức phóng tầm mắt ra xa
+                  nhìn ngắm cảnh vật, thả những nỗi buồn, mệt mỏi theo gió bay
+                  đi để khi rời đi sẽ chỉ còn niềm vui và sự mong muốn quay trở
+                  lại.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/1FnFo2WMCeTuHsGU7"
+                      target="_blank"
+                      >HVMM+GG9, Thành Công, Nguyên Bình, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-8.jpg"
+                    class="w3-container"
+                    alt="Vườn quốc gia Phja Oắc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Chùa Phật Tích Trúc Lâm Bản Giốc
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Cao Bằng không chỉ nổi tiếng nhờ thiên nhiên tươi đẹp, phong
+                  cảnh hữu tình. Du khách biết đến Cao Bằng còn qua những ngôi
+                  đền ngôi chùa linh thiêng nổi tiếng và Chùa Phật Tích Trúc Lâm
+                  Bản Giốc là một trong số đó.
+                </p>
+                <p class="detail-content">
+                  Nằm tại núi Phia Nhằm, ngôi chùa được xây dựng rộng rãi, khang
+                  trang, có thể đón số lượng lớn du khách đến tham quan vãn cảnh
+                  và dâng hương làm lễ. Kiến trúc thuần Việt và nguyên vật liệu
+                  từ gỗ lim nên chắc chắn sẽ tạo cho du khách cảm giác gần gũi,
+                  thân thuộc.
+                </p>
+                <p class="detail-content">
+                  Không chỉ đơn thuần là một địa điểm du lịch Cao Bằng, Chùa
+                  Phật Tích Trúc Lâm Bản Giốc còn là niềm tự hào, là chốn thanh
+                  tịnh để lui về của người dân nơi đây.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/a47JvcxLKiCW3gJNA"
+                      target="_blank"
+                      >VP2F+87, Đàm Thuỷ, Trùng Khánh, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-9.jpg"
+                    class="w3-container"
+                    alt="Chùa Phật Tích Trúc Lâm Bản Giốc"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Đền Kỳ Sầm
+                </summary>
+                <p class="detail-content">
+                  <mark><strong>Giới thiệu:</strong></mark
+                  ><br />
+                  Đền Kỳ Sầm là địa điểm du lịch Cao Bằng được du khách ghé thăm
+                  đông nhất vào mùa xuân. Lúc này, lễ hội đền Kỳ Sầm được tổ
+                  chức, đông đảo người dân từ khắp nơi hội tụ về đây cùng nhau
+                  trẩy hội. Không khí đền Kỳ Sầm sôi động, tấp nập hơn bao giờ
+                  hết.
+                </p>
+                <p class="detail-content">
+                  Mọi người sẽ cùng được ôn lại những trang sử hào hùng gắn với
+                  mảnh đất này, được chơi những trò chơi dân gian đặc trưng của
+                  vùng Đông Bắc, được hòa mình trong thiên nhiên Cao Bằng tươi
+                  đẹp, nên thơ.
+                </p>
+                <p class="detail-content">
+                  Nếu không ghé vào mùa xuân, đền Kỳ Sầm sẽ mang vẻ đẹp trầm mặc
+                  hơn, du khách sẽ được chiêm ngưỡng kỹ hơn kiến trúc ngôi đền.
+                  Nhưng dù là mùa nào, đây cũng là một địa điểm du lịch Cao Bằng
+                  nổi tiếng và đáng để ghé thăm.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/BbXaR3PkHvh7bdgX9"
+                      target="_blank"
+                      >M6VP+F77 Xã, Vĩnh Quang, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-10.jpg"
+                    class="w3-container"
+                    alt="Đền Kỳ Sầm"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Động Ngườm Ngao
+                </summary>
+                <p class="detail-content">
+                  Có thể nói, Động Ngườm Ngao là một kiệt tác nghệ thuật của
+                  thiên nhiên. Vì không có sự tác động của con người nên hang
+                  động có một vẻ đẹp riêng, cuốn hút đến kỳ lạ. Những nhũ đá và
+                  măng đá có hình dạng phong phú giúp cho du khách sẽ có những
+                  liên tưởng khác nhau, rất thú vị.
+                </p>
+                <p class="detail-content">
+                  Đặc biệt, khi đến địa điểm du lịch Cao Bằng này, du khách còn
+                  được lắng nghe câu chuyện, hiểu được ý nghĩa tên gọi “Ngườm
+                  Ngao”. Theo đó, “Ngườm Ngao” tức là “hang hổ”, trong hang có
+                  rất nhiều người hổ dữ sinh sống. Người dân tại đây đã đoàn kết
+                  cùng nhau đuổi hết hổ dữ từ đó có cuộc sống yên lành, bình
+                  yên.
+                </p>
+                <p class="detail-content">
+                  Như vậy, khi đến địa điểm du lịch Cao Bằng Hang Ngườm Ngao, du
+                  khách không chỉ ngắm cảnh mà còn có thêm những kiến thức thú
+                  vị cùng những bài học bổ ích.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/WkpMFtk7vpF3XZFL6"
+                      target="_blank"
+                      >VP22+5PP cửa ra động ngườm ngao, gần, Xóm khuổi Ky, bản
+                      Gun, Trùng Khánh, Cao Bằng 12345, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-11.jpg"
+                    class="w3-container"
+                    alt="Động Ngườm Ngao"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Làng rèn Phúc Sen
+                </summary>
+                <p class="detail-content">
+                  Di chuyển cách thành phố Cao Bằng khoảng 30km là du khách có
+                  thể đến một làng nghề nổi tiếng là làng rèn Phúc Sen. Tại đây,
+                  du khách sẽ được tham quan ngắm cảnh và hít thở bầu không khí
+                  trong lành. Không chỉ vậy, mọi người sẽ hiểu hơn về cuộc sống,
+                  phong tục tập quán của người dân tộc Nùng An – Cao Bằng.
+                </p>
+                <p class="detail-content">
+                  Đặc biệt, vì có nhiều lò rèn nên du khách có thể tận mắt chứng
+                  kiến công đoạn tạo nên một sản phẩm rèn của người thợ. Được
+                  biết, để đạt được kỹ thuật rèn dao bằng mắt “dẻo mà không mềm,
+                  cứng mà không giòn”, người thợ rèn đã tạo nên rất nhiều sản
+                  phẩm khác nhau, trải qua thời gian dài rèn luyện nên có thể
+                  nhìn bằng mắt là biết được độ chín của sản phẩm mà mang ra
+                  nhúng nước kịp thời.
+                </p>
+                <p class="detail-content">
+                  Quả thật, địa điểm du lịch Cao Bằng làng rèn Phúc Sen sẽ mang
+                  lại cho du khách những trải nghiệm bất ngờ và vô cùng đáng
+                  nhớ. Nơi đây sẽ đặc biệt thích hợp để những gia đình ở thành
+                  phố đang tìm một nơi vừa có không gian trong lành, vừa có
+                  những kiến thức thú vị để con trẻ học tập.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/wwoynfjGbvhQ8cPt5"
+                      target="_blank"
+                      >MCM5+9FH, QL3, Phúc Sen, Quảng Uyên, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-12.jpg"
+                    class="w3-container"
+                    alt="Làng rèn Phúc Sen"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Thành Bản Phủ
+                </summary>
+                <p class="detail-content">
+                  Là một tỉnh biên giới, Cao Bằng có rất nhiều cửa khẩu lớn nhỏ
+                  khác nhau. Trong đó nổi bật với cửa khẩu Sóc Giang – nơi nối
+                  liền huyện Hà Quảng – Cao Bằng với tỉnh Quảng Tây – Trung
+                  Quốc.
+                </p>
+                <p class="detail-content">
+                  Đến đây, du khách sẽ bị cuốn hút bởi những câu chuyện lịch sử
+                  trong thời chiến, từ đó góp phần thêm yêu thêm trân trọng lịch
+                  sử nước nhà. Cửa khẩu Sóc Giang trở thành một địa điểm du lịch
+                  Cao Bằng không chỉ bởi không khí buôn bán sôi nổi, tấp nập mà
+                  còn bởi từ cửa khẩu, du khách có thể tham quan rất nhiều di
+                  tích lịch sử hay ngắm nhìn những khung cảnh thiên nhiên tươi
+                  đẹp nhất.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/2sUmf8x1wLkzGEXQ8"
+                      target="_blank"
+                      >Sóc Hà, Hà Quảng District, Cao Bang, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-14.jpeg"
+                    class="w3-container"
+                    alt="Cửa khẩu Sóc Giang"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+
+            <li>
+              <details>
+                <summary class="w3-bar-item w3-button w3-padding summary">
+                  Thác Nặm Trá
+                </summary>
+                <p class="detail-content">
+                  Nếu muốn tìm kiếm một không gian đẹp như thơ tại Cao Bằng thì
+                  còn chần chờ gì nữa hãy đến ngay thác Nặm Trá. Với nhiều tầng
+                  nước chảy, con thác mang trong mình vẻ đẹp hùng vĩ, oai
+                  nghiêm.
+                </p>
+                <p class="detail-content">
+                  Khi được điểm tô thêm bởi hoa rừng, cây rừng, thác Nặm Trá lại
+                  càng thêm sống động, rực rỡ và tràn đầy sức sống. Dù có mệt
+                  mỏi chán chường đến đâu, chỉ cần đặt bàn chân xuống dòng nước
+                  mát là những nỗi buồn tự dưng biến mất, chỉ còn lại cảm giác
+                  sảng khoái, mát mẻ và vui tươi.
+                </p>
+                <p class="detail-content">
+                  Có lẽ chính vì thế mà thác Nặm Trá trở thành một địa điểm du
+                  lịch Cao Bằng được nhiều người yêu thích và ghé thăm.
+                </p>
+                <p class="detail-content">
+                  <mark><strong>Địa điểm:</strong></mark
+                  ><br />
+                  <u
+                    ><a
+                      href="https://maps.app.goo.gl/DznWPW49jn3NDhv88"
+                      target="_blank"
+                      >Q8H8+3MV, Cao Chương, Trà Lĩnh, Cao Bằng, Vietnam</a
+                    ></u
+                  >
+                </p>
+                <figure>
+                  <img
+                    src="https://ticotravel.com.vn/wp-content/uploads/2022/06/Dia-diem-du-lich-Cao-Bang-15.jpg"
+                    class="w3-container"
+                    alt="Thác Nặm Trá"
+                  />
+                  <figcaption style="font-size: smaller">
+                    (Nguồn thông tin và hình ảnh:
+                    <a
+                      href="https://ticotravel.com.vn/dia-diem-du-lich-cao-bang/"
+                      target="_blank"
+                      >ticotravel.com</a
+                    >)
+                  </figcaption>
+                </figure>
+              </details>
+            </li>
+          </ol>
+        </article>
+      </section>
+      <hr />
+
+      <script>
+        const summaries = document.querySelectorAll("summary");
+        summaries.forEach((s) => s.classList.add("ccc"));
+      </script>
+
+      <section class="w3-row w3-padding-16" id="tiemnang">
+        <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
+        <article style="font-size: 20px; line-height: 1.7">
+          <p>
+            <mark
+              ><strong
+                >Tiềm năng phát triển kinh tế rừng của Cao Bằng</strong
+              ></mark
+            ><br />
+            Cao Bằng là tỉnh có điều kiện tự nhiên thuận lợi để phát triển kinh
+            tế rừng, với diện tích rừng trồng ngày càng mở rộng và màu xanh rừng
+            phủ khắp các sườn núi. Tuy nhiên, thực tế hiện nay
+            <u>phần lớn gỗ rừng trồng</u> trên địa bàn vẫn chỉ được đưa vào các
+            xưởng gỗ bóc, băm dăm hoặc bán dưới dạng
+            <u>gỗ chưa qua sơ chế</u> cho các địa phương khác. Điều này khiến
+            giá gỗ rừng trồng <u>bấp bênh theo nhu cầu thị trường</u>, giá trị
+            kinh tế chưa cao và chưa khai thác hết tiềm năng sẵn có.
+          </p>
+          <p>
+            <mark><strong>Nhu cầu đầu tư chế biến và tạo việc làm</strong></mark
+            ><br />
+            Theo ông Lý Minh Sơn, Chủ tịch UBND xã Bạch Đằng, việc thu hút các
+            <u>nhà máy chế biến, tiêu thụ nông lâm sản công suất lớn</u> là yêu
+            cầu cấp thiết trong thời gian tới. Các nhà máy này sẽ góp phần
+            <u>nâng cao giá trị sản phẩm gỗ rừng trồng</u>, đồng thời tạo thêm
+            <u>việc làm ổn định cho người dân địa phương</u>, giúp phát triển
+            kinh tế gắn với lợi thế rừng.
+          </p>
+          <p>
+            <mark><strong>Những khó khăn và kiến nghị</strong></mark
+            ><br />
+            Để hiện thực hóa mục tiêu phát triển kinh tế rừng, địa phương mong
+            muốn được tháo gỡ các <u>vướng mắc về thể chế và chính sách</u>, đặc
+            biệt là các vấn đề liên quan đến <u>thẩm quyền thu hồi đất</u>,
+            <u>thuế đất</u>, cũng như <u>cơ sở địa chính và dữ liệu đất đai</u>.
+            Bên cạnh đó, xã cũng kỳ vọng được quan tâm đầu tư, giới thiệu các
+            <u>nhà đầu tư tiềm năng, có tâm huyết</u> đồng hành phát triển lâu
+            dài cùng địa phương.
+          </p>
+          <p>
+            <mark><strong>Định hướng phát triển bền vững</strong></mark
+            ><br />
+            Việc hình thành các
+            <u>nhà máy sơ chế, chế biến nông lâm sản</u> ngay tại địa bàn sẽ
+            giúp liên kết chặt chẽ với người dân từ khâu trồng trọt, sản xuất
+            đến bao tiêu sản phẩm, tạo chuỗi giá trị hoàn chỉnh. Với những cánh
+            rừng đang lên xanh và chính sách ngày càng đi vào thực tiễn, kinh tế
+            rừng ở Cao Bằng đang trở thành <u>hướng đi bền vững</u>, giúp người
+            dân ổn định cuộc sống, làm giàu từ lợi thế địa phương và gắn bó hơn
+            với quê hương.
+          </p>
+          <p>
+            <mark><strong>Kết luận</strong></mark
+            ><br />
+            Có thể khẳng định, nếu được tháo gỡ kịp thời các
+            <u>rào cản về cơ chế, chính sách</u> và đẩy mạnh thu hút
+            <u>đầu tư chế biến sâu</u>, Cao Bằng sẽ phát huy hiệu quả tiềm năng
+            kinh tế rừng, biến <u>lợi thế tài nguyên rừng</u> thành động lực
+            phát triển kinh tế – xã hội, góp phần nâng cao đời sống người dân và
+            thúc đẩy sự phát triển bền vững của địa phương.
+          </p>
+          <p style="font-size: 15px" class="w3-center">
+            (Nguồn thông tin:
+            <a
+              href="https://vov.vn/kinh-te/khoi-day-tiem-nang-dua-kinh-te-rung-thanh-mui-nhon-phat-trien-cua-cao-bang-post1243276.vov"
+              target="_blank"
+              >VOV.VN</a
+            >)
+          </p>
+        </article>
+      </section>
+      <hr />
+    </main>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>HẾT!</p>
+    </footer>
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("navMenu");
+        if (navMenu) {
+          navMenu.classList.toggle("w3-hide");
+        }
+      }
+    </script>
+  </body>
+</html>
