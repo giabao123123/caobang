@@ -29,18 +29,15 @@
     <a href="#hero" class="scroll-top-button">
       <i class="fas fa-chevron-up"></i>
     </a>
-
     <aside id="backToTop">
       <a href="#hero" aria-label="Lên đầu trang">
         <span class="arrow arrow-1"></span>
         <span class="arrow arrow-2"></span>
       </a>
     </aside>
-
     <aside class="box w3-right neon-box2" style="margin-top: 2%">
       <p class="text">Chào mừng đến với tỉnh Cao Bằng!</p>
     </aside>
-
     <header class="w3-top">
       <nav
         class="w3-bar w3-white w3-padding w3-card"
@@ -84,35 +81,6 @@
             >
           </li>
         </ul>
-
-        <script>
-          const menuLinks = document.querySelectorAll("#menu-list a");
-          const menuToggle = document.getElementById("menu-toggle");
-          menuLinks.forEach((link) => {
-            link.addEventListener("click", () => {
-              if (window.innerWidth <= 768) {
-                menuToggle.checked = false;
-              }
-            });
-          });
-        </script>
-
-        <script>
-          const audio = document.getElementById("bgMusic");
-          const btn = document.getElementById("toggleBtn");
-          if (btn && audio) {
-            btn.addEventListener("click", () => {
-              if (audio.paused) {
-                audio.play();
-                btn.textContent = "⏸ Tắt nhạc";
-              } else {
-                audio.pause();
-                btn.textContent = "▶ Phát nhạc";
-              }
-            });
-          }
-        </script>
-
         <nav
           style="
             background: linear-gradient(180deg, #ff9800, #ff5722);
@@ -153,22 +121,6 @@
         </nav>
       </nav>
     </header>
-
-    <script>
-      const menuScroll = document.querySelector(".menu-scroll");
-      const btnLeft = document.querySelector(".left-btn");
-      const btnRight = document.querySelector(".right-btn");
-      const step = 200;
-      if (btnRight && btnLeft && menuScroll) {
-        btnRight.addEventListener("click", () => {
-          menuScroll.scrollLeft += step;
-        });
-        btnLeft.addEventListener("click", () => {
-          menuScroll.scrollLeft -= step;
-        });
-      }
-    </script>
-
     <main class="w3-content" style="max-width: 1100px">
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
@@ -238,7 +190,6 @@
             )
           </p>
         </article>
-
         <figure class="w3-center">
           <img
             src="https://th.bing.com/th/id/R.1e78d8dfb0a7c7d1627da74f21993f24?rik=jGGwMlrn1xWiHQ&pid=ImgRaw&r=0"
@@ -257,7 +208,6 @@
         </figure>
       </section>
       <hr />
-
       <section class="w3-row-padding w3-padding-16" id="menu">
         <h1 class="w3-padding-16 w3-center" style="color: red; font-size: 50px">
           ĐỊA LÝ
@@ -308,7 +258,6 @@
             >
           </p>
         </article>
-
         <figure class="w3-center">
           <img
             src="https://tse3.mm.bing.net/th/id/OIP.Q7ChsMCbk5QQcEMqI6jnNAHaE8?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -327,7 +276,6 @@
         </figure>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DIEUKIENTUNHIEN">
         <h1 class="w3-center" style="font-size: 50px">ĐIỀU KIỆN TỰ NHIÊN</h1>
         <article>
@@ -380,7 +328,6 @@
         </article>
       </section>
       <hr />
-
       <section
         class="w3-container w3-padding-16 table-responsive"
         style="overflow-x: auto"
@@ -505,7 +452,7 @@
           <p style="font-size: 15px">
             (nguồn thông tin:
             <a href="https://vi.wikipedia.org/wiki/Cao_B%E1%BA%B1ng"
-              >wiki Cao Bằng</a
+              >Wikipedia Cao Bằng</a
             >
             )
           </p>
@@ -516,6 +463,10 @@
         <h1 class="w3-padding-16" style="color: red; font-size: 50px">
           DỰ BÁO THỜI TIẾT TRONG TỈNH
         </h1>
+        <p>
+          ⚠️ Dữ liệu thời tiết hiện vẫn theo đơn vị hành chính cũ — chưa cập
+          nhật sau sáp nhập tỉnh.
+        </p>
         <div
           style="
             max-width: 760px;
@@ -539,7 +490,6 @@
           >
             Gõ tên xã / phường / thị trấn để xem dự báo thời tiết
           </p>
-
           <div
             style="position: relative; max-width: 440px; margin: 0 auto 22px"
           >
@@ -592,7 +542,6 @@
               "
             ></div>
           </div>
-
           <div
             id="tt-box"
             style="
@@ -629,7 +578,6 @@
             </div>
           </div>
         </div>
-
         <script>
           var TT_AREAS = [
             {
@@ -690,9 +638,7 @@
               .replace(/[\u0300-\u036f]/g, "")
               .replace(/đ/g, "d");
           }
-
           var ttFiltered = TT_AREAS.slice();
-
           function ttFilter() {
             var q = ttNorm(document.getElementById("tt-input").value.trim());
             ttFiltered = q
@@ -703,13 +649,11 @@
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttShow() {
             ttFiltered = TT_AREAS.slice();
             ttRender();
             document.getElementById("tt-drop").style.display = "block";
           }
-
           function ttRender() {
             var dd = document.getElementById("tt-drop");
             if (!ttFiltered.length) {
@@ -740,7 +684,6 @@
               })
               .join("");
           }
-
           function ttSelect(idx) {
             var a = TT_AREAS[idx];
             document.getElementById("tt-input").value = a.name;
@@ -749,13 +692,10 @@
             if (a.parent) {
               locationTitle += " (" + a.parent + ")";
             }
-
             document.getElementById("tt-name").textContent = locationTitle;
             document.getElementById("tt-box").style.display = "block";
-
             var wrap = document.getElementById("tt-widget-wrap");
             var noEmbed = document.getElementById("tt-noembed");
-
             if (a.widget && a.widget.trim()) {
               wrap.innerHTML = a.widget;
               wrap.style.display = "block";
@@ -765,18 +705,45 @@
               wrap.style.display = "none";
               noEmbed.style.display = "block";
             }
-
             document
               .getElementById("tt-box")
               .scrollIntoView({ behavior: "smooth", block: "start" });
           }
-
           document.addEventListener("click", function (e) {
             var inp = document.getElementById("tt-input");
             var drop = document.getElementById("tt-drop");
             if (drop && e.target !== inp && !drop.contains(e.target))
               drop.style.display = "none";
           });
+          const menuLinks = document.querySelectorAll("#menu-list a");
+          const menuToggle = document.getElementById("menu-toggle");
+          menuLinks.forEach((link) => {
+            link.addEventListener("click", () => {
+              if (window.innerWidth <= 768) {
+                menuToggle.checked = false;
+              }
+            });
+          });
+          const menuScroll = document.querySelector(".menu-scroll");
+          const btnLeft = document.querySelector(".left-btn");
+          const btnRight = document.querySelector(".right-btn");
+          const step = 200;
+          if (btnRight && btnLeft && menuScroll) {
+            btnRight.addEventListener("click", () => {
+              menuScroll.scrollLeft += step;
+            });
+            btnLeft.addEventListener("click", () => {
+              menuScroll.scrollLeft -= step;
+            });
+          }
+          const summaries = document.querySelectorAll("summary");
+          summaries.forEach((s) => s.classList.add("ccc"));
+          function toggleMenu() {
+            const navMenu = document.getElementById("navMenu");
+            if (navMenu) {
+              navMenu.classList.toggle("w3-hide");
+            }
+          }
         </script>
       </section>
       <hr />
@@ -958,7 +925,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="VANHOA">
         <h1 class="w3-center" style="font-size: 50px">VĂN HOÁ, LỄ HỘI</h1>
         <article>
@@ -1003,7 +969,6 @@
             được cha truyền con nối qua <u>hàng chục</u> đời, sản phẩm nổi tiếng
             về độ sắc và độ bền, tiêu thụ rộng rãi trên cả nước.
           </p>
-
           <h2 style="font-size: 40px">
             <strong><mark>LỄ HỘI:</mark></strong>
           </h2>
@@ -1052,7 +1017,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Đền Kỳ Sầm</strong></mark>
                 <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
@@ -1083,7 +1047,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Đền Vua Lê</strong></mark>
                 <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
@@ -1111,7 +1074,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội thác Bản Giốc</strong></mark>
                 <p>
@@ -1146,7 +1108,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Chùa Sùng Phúc</strong></mark>
                 <p>Thời gian: <u>Ngày 6 tháng Giêng Âm lịch hàng năm</u></p>
@@ -1174,7 +1135,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Về nguồn Pác Bó</strong></mark>
                 <p>Thời gian: <u>Ngày 6 tháng 1 dương lịch hàng năm</u></p>
@@ -1205,7 +1165,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Nàng Hai</strong></mark>
                 <p>
@@ -1236,7 +1195,6 @@
                   </figcaption>
                 </figure>
               </li>
-
               <li>
                 <mark><strong>Lễ hội Chùa Đà Quận</strong></mark>
                 <p>Thời gian: <u>Ngày 30 tháng Giêng Âm lịch hàng năm</u></p>
@@ -1269,7 +1227,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DITICH">
         <h1 class="w3-center" style="font-size: 50px">
           DI TÍCH, DI SẢN VĂN HOÁ
@@ -1281,7 +1238,6 @@
             này cho thấy sự đa dạng và phong phú của các di sản văn hóa vật thể
             trên địa bàn tỉnh.
           </p>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -1542,7 +1498,6 @@
               </li>
             </ol>
           </details>
-
           <details>
             <summary
               class="w3-bar-item w3-button w3-padding"
@@ -1695,7 +1650,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="GIAODUC">
         <h1 class="w3-center" style="font-size: 50px">GIÁO DỤC</h1>
         <article>
@@ -1740,7 +1694,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="KINHTE">
         <br />
         <h1 class="w3-center" style="font-size: 50px">KINH TẾ</h1>
@@ -1759,7 +1712,6 @@
             GRDP. Về Chỉ số năng lực cạnh tranh cấp tỉnh (PCI), Cao Bằng xếp thứ
             58/63 tỉnh, thành phố.
           </p>
-
           <p>
             <strong><mark>Giai đoạn 2016–2020</mark></strong>
           </p>
@@ -1774,7 +1726,6 @@
             dụng nước hợp vệ sinh trên 88%. Giai đoạn 2016–2018, 87 dự án được
             cấp chứng nhận đầu tư với tổng vốn <u>12.308 tỉ đồng</u>.
           </p>
-
           <p>
             <strong><mark>Dự kiến kết quả cuối giai đoạn</mark></strong>
           </p>
@@ -1789,10 +1740,8 @@
             có 26 dự án được cấp chứng nhận đầu tư với tổng vốn
             <u>2.025 tỉ đồng</u>.
           </p>
-
           <h2 style="text-align: center">Biểu đồ GRDP Cao Bằng 2015–2024</h2>
           <p style="text-align: center">Đơn vị: tỷ đồng / %</p>
-
           <figure style="width: 80%; margin: auto" class="chart-container">
             <canvas id="grdpChart"></canvas>
             <figcaption style="font-size: 15px; margin-top: 10px">
@@ -1814,7 +1763,6 @@
             </figcaption>
           </figure>
         </article>
-
         <script>
           const ctx = document.getElementById("grdpChart");
           new Chart(ctx, {
@@ -1885,7 +1833,6 @@
         </script>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="AMTHUC">
         <h1 class="w3-center" style="font-size: 50px">ẨM THỰC</h1>
         <h2>-Cao Bằng có rất nhiều đặc sản nổi tiếng có thể kể đến như:</h2>
@@ -1939,7 +1886,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -1989,7 +1935,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2037,7 +1982,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2082,7 +2026,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2129,7 +2072,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2177,7 +2119,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2225,7 +2166,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2281,7 +2221,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2327,7 +2266,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2374,7 +2312,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2423,7 +2360,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2471,7 +2407,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2518,7 +2453,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2558,7 +2492,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2603,7 +2536,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2650,7 +2582,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2690,7 +2621,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding">
@@ -2747,7 +2677,6 @@
         </article>
       </section>
       <hr />
-
       <section class="w3-row w3-padding-16" id="DULICH">
         <h1 class="w3-center" style="font-size: 50px">DU LỊCH</h1>
         <h2>-Cao Bằng có những điểm du lịch nổi tiếng như:</h2>
@@ -2805,7 +2734,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -2855,7 +2783,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -2900,7 +2827,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -2956,7 +2882,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3004,7 +2929,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3053,7 +2977,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3103,7 +3026,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3156,7 +3078,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3210,7 +3131,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3265,7 +3185,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3320,7 +3239,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3377,7 +3295,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3426,7 +3343,6 @@
                 </figure>
               </details>
             </li>
-
             <li>
               <details>
                 <summary class="w3-bar-item w3-button w3-padding summary">
@@ -3481,12 +3397,6 @@
         </article>
       </section>
       <hr />
-
-      <script>
-        const summaries = document.querySelectorAll("summary");
-        summaries.forEach((s) => s.classList.add("ccc"));
-      </script>
-
       <section class="w3-row w3-padding-16" id="tiemnang">
         <h1 class="w3-center" style="font-size: 50px">TIỀM NĂNG PHÁT TRIỂN</h1>
         <article style="font-size: 20px; line-height: 1.7">
@@ -3560,17 +3470,8 @@
       </section>
       <hr />
     </main>
-
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
-    <script>
-      function toggleMenu() {
-        const navMenu = document.getElementById("navMenu");
-        if (navMenu) {
-          navMenu.classList.toggle("w3-hide");
-        }
-      }
-    </script>
   </body>
 </html>
