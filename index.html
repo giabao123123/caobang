@@ -1,10 +1,10 @@
 ﻿<!doctype html>
-<html>
+<html lang="vi">
   <head>
     <title>Cao Bằng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-    
+
 <link rel="shortcut icon" href="./Logo/favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="./Logo/android-chrome-512x512.png" type="image/x-icon">
 <link rel="shortcut icon" href="./Logo/apple-touch-icon.png" type="image/x-icon">
@@ -13,52 +13,28 @@
 <link rel="shortcut icon" href="./Logo/android-chrome-192x192.png" type="image/x-icon">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://giabao123123.github.io/webcon/web%20con.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap" />
+    <link rel="stylesheet" href="Style.css" />
     <style></style>
   </head>
-  <body class="w3-light-grey" style="padding-top: 110px" id="hero">
-    <a href="#hero" class="scroll-top-button">
-      <i class="fas fa-chevron-up"></i>
-    </a>
-    <aside id="backToTop">
-      <a href="#hero" aria-label="Lên đầu trang">
-        <span class="arrow arrow-1"></span>
-        <span class="arrow arrow-2"></span>
-      </a>
-    </aside>
-    <aside class="box w3-right neon-box2" style="margin-top: 2%">
-      <p class="text">Chào mừng đến với tỉnh Cao Bằng!</p>
-    </aside>
+  <body class="w3-light-grey">
     <header class="w3-top">
       <nav
         class="w3-bar w3-white w3-padding w3-card"
-        style="letter-spacing: 4px"
+        aria-label="Thanh điều hướng chính"
       >
         <a href="https://giabao123123.github.io/mienvietnam/" class="w3-bar-item neon-box">Cao Bằng</a>
         <button class="scroll-btn left-btn w3-hide-small w3-hide-medium">
-          ❮
+          &#10094;
         </button>
         <button class="scroll-btn right-btn w3-hide-small w3-hide-medium">
-          ❯
+          &#10095;
         </button>
         <input type="checkbox" id="menu-toggle" />
         <label for="menu-toggle" class="menu-icon">☰</label>
         <ul
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fffaf0;
-          "
           class="menu w3-right w3-button"
           id="menu-list"
         >
@@ -78,42 +54,27 @@
           <li><a href="#DULICH">DU LỊCH</a></li>
           <li><a href="#tiemnang">TIỀM NĂNG PHÁT TRIÊN</a></li>
           <li>
-            <a href="https://giabao123123.github.io/trochoicaobang/"
-              >TRÒ CHƠI</a
-            >
+            <a href="https://giabao123123.github.io/trochoicaobang/">TRÒ CHƠI</a>
           </li>
         </ul>
         <nav
-          style="
-            background: linear-gradient(180deg, #ff9800, #ff5722);
-            color: #fff3cd;
-          "
           class="w3-animate-left w3-hide-small neon-box"
+          aria-label="Menu cuộn desktop"
         >
-          <div class="menu-scroll">
-            <a href="#about" class="w3-bar-item w3-button"
-              >LỊCH SỬ HÌNH THÀNH</a
-            >
+          <div class="menu-scroll" role="list">
+            <a href="#about" class="w3-bar-item w3-button">LỊCH SỬ HÌNH THÀNH</a>
             <a href="#menu" class="w3-bar-item w3-button">ĐỊA LÝ</a>
-            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button"
-              >ĐIỀU KIỆN TỰ NHIÊN</a
-            >
+            <a href="#DIEUKIENTUNHIEN" class="w3-bar-item w3-button">ĐIỀU KIỆN TỰ NHIÊN</a>
             <a href="#khihau" class="w3-bar-item w3-button">KHÍ HẬU</a>
-            <a href="#THOITIET" class="w3-bar-item w3-button"
-              >DỰ BÁO THỜI TIẾT TRONG TỈNH</a
-            >
+            <a href="#THOITIET" class="w3-bar-item w3-button">DỰ BÁO THỜI TIẾT TRONG TỈNH</a>
             <a href="#contact" class="w3-bar-item w3-button">DÂN CƯ</a>
             <a href="#VANHOA" class="w3-bar-item w3-button">VĂN HOÁ</a>
-            <a href="#DITICH" class="w3-bar-item w3-button"
-              >DI TÍCH, DI SẢN VĂN HOÁ</a
-            >
+            <a href="#DITICH" class="w3-bar-item w3-button">DI TÍCH, DI SẢN VĂN HOÁ</a>
             <a href="#GIAODUC" class="w3-bar-item w3-button">GIÁO DỤC</a>
             <a href="#KINHTE" class="w3-bar-item w3-button">KINH TẾ</a>
             <a href="#AMTHUC" class="w3-bar-item w3-button">ẨM THỰC</a>
             <a href="#DULICH" class="w3-bar-item w3-button">DU LỊCH</a>
-            <a href="#tiemnang" class="w3-bar-item w3-button"
-              >TIỀM NĂNG PHÁT TRIÊN</a
-            >
+            <a href="#tiemnang" class="w3-bar-item w3-button">TIỀM NĂNG PHÁT TRIÊN</a>
             <a
               href="https://giabao123123.github.io/trochoicaobang/"
               class="w3-bar-item w3-button"
@@ -122,8 +83,52 @@
           </div>
         </nav>
       </nav>
+      <aside
+        class="box w3-right neon-box2"
+        aria-label="Lời chào"
+      >
+        <p class="text">Chào mừng đến với tỉnh Cao Bằng!</p>
+      </aside>
     </header>
+    <aside id="backToTop">
+      <a href="#" aria-label="Lên đầu trang">
+        <span class="arrow arrow-1"></span>
+        <span class="arrow arrow-2"></span>
+      </a>
+    </aside>
+    <a href="#" class="scroll-top-button" id="scrollTopBtn" aria-label="Lên đầu trang">&#8679;</a>
     <main class="w3-content" style="max-width: 1100px">
+      <section class="hero-vl" aria-label="Giới thiệu tỉnh Cao Bằng">
+        <div
+          class="hero-vl-bg"
+          style="background-image: url('https://th.bing.com/th/id/R.1e78d8dfb0a7c7d1627da74f21993f24?rik=jGGwMlrn1xWiHQ&pid=ImgRaw&r=0')"
+        ></div>
+        <div class="hero-vl-scrim"></div>
+        <div class="hero-vl-content">
+          <p class="hero-vl-kicker">Đông Bắc Việt Nam</p>
+          <h1 class="hero-vl-title">Cao Bằng</h1>
+          <p class="hero-vl-sub">
+            Miền đất biên cương hùng vĩ phía đông bắc Tổ quốc — nơi thác Bản Giốc
+            huyền ảo, hang Pác Bó lịch sử và Công viên địa chất toàn cầu hội tụ
+            giữa núi rừng Việt Bắc.
+          </p>
+          <div class="hero-vl-stats">
+            <div class="hero-vl-stat">
+              <span>6.707 km²</span>
+              <small>Diện tích</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>Thục Phán</span>
+              <small>Tỉnh lỵ</small>
+            </div>
+            <div class="hero-vl-stat">
+              <span>~600 km</span>
+              <small>Biên giới Trung Quốc</small>
+            </div>
+          </div>
+        </div>
+        <div class="hero-vl-waves"></div>
+      </section>
       <section class="w3-row w3-padding-16 w3-animate-left" id="about">
         <h1 class="w3-center" style="color: red; font-size: 35px">
           LỊCH SỬ HÌNH THÀNH
@@ -585,52 +590,52 @@
             {
               name: "Thành phố Cao Bằng",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/cao-bang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/cao-bang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Hòa An",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/hoa-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/hoa-an?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Thạch An",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/thach-an?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/thach-an?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Nguyên Bình",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/nguyen-binh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/nguyen-binh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bảo Lạc",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lac?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lac?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Bảo Lâm",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lam-cao-bang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/bao-lam-cao-bang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Hạ Lang",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-lang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-lang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Hà Quảng",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-quang?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/ha-quang?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Trùng Khánh",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/trung-khanh?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/trung-khanh?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
             {
               name: "Huyện Quảng Hòa",
               parent: "Tỉnh Cao Bằng cũ",
-              widget: `<!--Begin thoitiet.app widget --><iframe src="https://thoitiet247.vn/widget/embed/cao-bang/quang-hoa?style=2&day=7&td=%23ffffff&ntd=%231c84ee&mvb=%23848484&mv=%231c84ee&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe><!-- End thoitiet.app widget -->`,
+              widget: `<iframe src="https://thoitiet247.vn/widget/embed/cao-bang/quang-hoa?style=2&day=7&td=%23ffffff&ntd=%231A6B42&mvb=%23848484&mv=%231A6B42&mdk=%23dddddd&htd=true" id="widgeturl" width="100%" height="550px" scrolling="no" frameborder="0" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>`,
             },
           ];
           function ttNorm(s) {
@@ -3475,10 +3480,23 @@
     <footer class="w3-center w3-light-grey w3-padding-32">
       <p>HẾT!</p>
     </footer>
+    <script>
+      
+      var scrollBtn = document.getElementById('scrollTopBtn');
+      if (scrollBtn) {
+        window.addEventListener('scroll', function() {
+          if (window.scrollY > 300) {
+            scrollBtn.classList.add('show');
+          } else {
+            scrollBtn.classList.remove('show');
+          }
+        }, { passive: true });
+        scrollBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+      }
+    </script>
+    <script src="animations.js"></script>
   </body>
 </html>
-
-
-
-
-
